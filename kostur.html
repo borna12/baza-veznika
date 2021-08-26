@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Baza veznika iz Mrežnika</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="stil.css">
+<meta name="description" content="Baza veznika koja se temelji na sadržaju iz Mrežnika.">
+<meta name="keywords" content="baza veznika, Mrežnik, veznici">
+<meta name="author" content="Josip Mihaljević, Lana Hudeček">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<h1>Baza veznika iz Mrežnika</h1>
+<hr>
+
+<!--ovdje-->
+
+<button id="back2top">gore</button>
+<script src="js/back2top.min.js"></script>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+
+    // Call the BACK2TOP Function
+BACK2TOP(button, 200);
+    </script>
+
+    </script>
+</body>
