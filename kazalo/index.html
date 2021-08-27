@@ -1,346 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
-}
 
-.active, .accordion:hover {
-  background-color: #ccc; 
-}
-
-.panel {
-  padding: 0 18px;
-  display: none;
-  background-color: white;
-  overflow: hidden;
-}
-.Lemma__prvi_pregled {
-    display: none;
-}
-
-.pagination-single{display:none}
-.Lemma .Lemma__HomonymNumber{font-size: 18px;}
-.Indent {
-    margin-left: 5pt;
-    text-indent: -5pt;
-}
-
-.Uporaba {
-    color: #808080;
-}
-
-.Uporaba__uporaba {
-    color: #000000;
-}
-
-
-
-.Tvorbena_raz__tvorenice {
-    color: #000000;
-}
-.no-image a{
-     display: inline-block;
-    padding: 10px 15px;
-    text-align: center;
-    vertical-align: middle;
-    border: 1px solid;
-    border-radius: 10px;
-    background: white;
-    text-decoration: none;
-    margin: 1rem;
-}
-
-.Poveznice {}
-
-.poveznica {}
-
-.poveznica__poveznica {}
-
-.Stra_savjet {}
-
-.Stra_savjet__savjet_ob {}
-
-.poveznica__sveza {}
-
-.poveznica__mrtvi {}
-
-.Tvorbena_raz__mrtve_tvorenice {
-    color: #000000;
-}
-
-.Normativna_nap {
-    color: #000000;
-}
-
-.Normativna_nap__napomena {
-    color: #000000;
-}
-
-.Lemma_Stranci {
-    font-size: 2rem;
-}
-
-.Lemma_Djeca {
-    font-size: 2rem;
-}
-
-.Lemma_Djeca__natuknica {font-size: 30px;
-color: #089BE0;
-font-weight: 600;}
-
-.Lemma_Djeca__vrsta_rijeci {}
-
-.Lemma_Djeca__slogovi {}
-
-.Lemma_Stranci__natuknica {font-size: 30px;
-color: #089BE0;
-font-weight: 600;}
-
-.Lemma_Stranci__vrsta_rijeci {}
-
-.Lemma_Stranci__slogovi {}
-
-.Lemma__Djeca {}
-
-.Lemma__Stranci {}
-
-.Definicija_djeca {}
-
-.Definicija_djeca__definicija {}
-
-.Lemma__Incomplete {}
-
-.Lemma {
-    color: #000000;
-    font-size: 2rem;
-}
-
-.Lemma__LemmaSign {
-    font-weight: bold;
-    color: #000070;
-    font-size: 30px;
-}
-
-.Lemma__HomonymNumber {
-    font-size: 9pt;
-    font-weight: bold;
-    vertical-align: super;
-    color: #000070;
-}
-.navigacija{margin:10px}
-.Lemma__Notes {
-    color: #FD8668;
-}
-
-.Lemma__Frequency {}
-
-.Lemma__Modified {
-    font-size: 9pt;
-    color: #888888;
-}
-
-.Lemma__Created {
-    font-size: 9pt;
-    font-style: italic;
-    color: #888888;
-}
-
-.Sense {
-    color: #062A06;
-    display: block;
-    margin-top: 10px;
-}
-
-.References {
-    font-weight: bold;
-    color: #0C5252;
-}
-
-.Subentry {
-    color: #880502;
-    margin-top: 10px;
-}
-
-.Subentry__LemmaSign {
-    font-weight: bold;
-  font-size:30px
-}
-
-.Subentry__Frequency {}
-
-.Primjer {
-    font-size: 11pt;
-    text-decoration: none;
-}
-
-.Primjer__Primjer {
-    font-style: italic;
-    text-decoration: none;
-    color: #1F4422;
-}
-
-.Primjer__Izvor {}
-
-.Definicija {
-    color: #000040;
-}
-
-.Definicija__definicija {
-    font-weight: bold;
-  font-size:25px
-}
-
-.TE {
-    color: #1F4422;
-}
-
-.TE__TE {}
-
-.Sense__SenseNumber {
-    font-size: 9pt;
-    font-weight: bold;
-    vertical-align: super;
-}
-
-.Language__SearchScript {}
-
-.Language__ClickScript {}
-
-.Lemma__Naglaseno {font-size: 30px;
-color: #089BE0;
-font-weight: 600;}
-
-.Gramaticki_blok {}
-
-.Oblici {
-    color: #800000;
-}
-
-.Oblici__naglaseni {}
-
-.Oblici__nenaglaseni {}
-
-.Parnjaci {}
-
-.Parnjaci__mocijski {}
-
-.Parnjaci__vidski {}
-
-.Oblici__vanjska_poveznica {}
-
-.Subentry__stilska_odrednica {}
-
-.Subentry__strucna_odrednica {}
-
-.Sense__stilska_odrednica {}
-
-.Sense__strucna_odrednica {}
-
-.Sense__ograda {}
-
-.Kolokacija {
-    font-weight: bold;
-}
-
-.Kolokacija__odrednica {
-    color: #000000;
-}
-
-.Kolokacija__kolokacija {
-    font-weight: normal;
-    color: #800040;
-}
-
-.paragraf {}
-
-.kolokacije {
-    font-weight: bold;
-}
-
-.primjeri {}
-
-.vanjska_poveznica {}
-
-.vanjska_poveznica__izvor {
-    font-weight: bold;
-    color: #000000;
-}
-
-.vanjska_poveznica__poveznica {
-    color: #0080FF;
-}
-
-
-.Tvorbena_raz__tvorba {
-    color: #1F4422;
-}
-
-.Parnjaci__oznaka {}
-
-.Lemma__vrsta_rijeci {}
-
-.Oblici__djeca {}
-
-.Odrednice {}
-
-.Odrednice__gramaticka {}
-
-.Odrednice__stilska {}
-
-.Odrednice__strucna {}
-
-.Frazemi {
-    font-weight: bold;
-    text-decoration: none;
-  font-size:30px
-}
-
-.Frazemi__frazem {
-    color: #880502;
-}
-
-.Frazemi__objašnjenje {}
-
-.Lemma__slika {}
-
-.Lemma__zvuk {margin-left:5px; display:inline-block}
-
-.Lemma__ModifiedBy {
-    font-size: 9pt;
-}
-
-.Lemma__CreatedBy {
-    font-size: 9pt;
-    font-style: italic;
-}
-
-.Subentry__vrsta_rijeci {}
-
-.etimologija {}
-
-.etimologija__motivacija {}
-
-.Definicija__definicija_stranic {}
-
-.Lemma__prvi_pregled {}
-
-.Lemma__konacni_pregled {}
-</style>
-</head>
-<body>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">a</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="a" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">a</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Definicija"><span class="Definicija__definicija"> suprotna rečenica</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Izložbu je otvorio gradonačelnik Vladimir Bregović, a o izložbi je govorio autor Stjepan Zdenko Brezarić.</span></p>
 <span class="Primjer"></span>
@@ -458,7 +117,7 @@ font-weight: 600;}
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Kao suprotni veznik navodi ga Katičić (2002: 197, 183).</span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Normativna_nap">• <span class="Normativna_nap__napomena">U suprotnim rečenicama kojima se izražavaju kakvi vremenski (prijevremenost -  poslijevremenost), uzročno-posljedični, namjerni ili npr. dopusni odnosi često se u drugoj surečenici pojavljuje prilog koji upućuje na taj odnos, koji nerijetko stoju u kontaktu s veznikom <i>a</i>: <i>a onda</i>, <i>a tada</i>, <i>a zatim</i>, <i>a nakon tog</i>, <i>a stoga</i>, <i>a zbog toga</i>, <i>a radi toga</i>, <i>a usprkos tomu</i>,<i> a unatoč tomu</i>. Međutim, ti prilozi u pravilu ne tvore s veznikom složeni veznik, što je vidljivo iz činjenice da oni mogu u drugoj surečenici biti i na kojemu drugom mjestu, odnosno da ne moraju nužno stajavti uz veznik <i>a</i>, što pokazuje da nisu dijelom složenoga veznika koordinirane (suprotne) rečenice jer koordinator ne pripada nijednoj od surečenica, pa nije logično da jedna njegov dio može stajati u drugoj surečenici. Npr. rečenica <i>Troškovi života rastu iz dana u dan, a usprkos tomu potrebno je osigurati veća sredstva za školovanje djece, kupnju stana ili automobila ili uštedjeti neki iznos za mirnu starost.</i>  mogla bi glasiti i <i>Troškovi života rastu iz dana u dan, a  potrebno je usprkos tomu osigurati veća sredstva za školovanje djece, kupnju stana ili automobila ili uštedjeti neki iznos za mirnu starost. </i>. Kako bi složeni veznik morao pokazivati visok stupanj frazeologiziranosti te nemati sintaktičku funkciju u rečenici, takve skupine ne navodimo ovdje kao složene veznike unatoč tomu što se neki od njih navode u gramatikama ili literaturi kao složeni veznici. Svaki od takvih izraza ipak zahtijeva temeljitu analizu na velikome broju primjera.</span></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">àko </span><span class="Lemma__LemmaSign">ako</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="ako" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">àko </span><span class="Lemma__LemmaSign">ako</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Definicija"><span class="Definicija__definicija"> uvjetna rečenica, stvarna</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> -  Ako tražite proizvod koji nije na letku – javite se.</span></p>
 <span class="Primjer"></span>
@@ -646,13 +305,13 @@ font-weight: 600;}
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Katičić: "U realnim protazama javljaju se i veznicki izrazi samo ako, nego ako, nego ako li, bas ako, istom ako, vec ako. U svakom od tih izraza pogodbeni veznik ako dobiva jos posebno znacenje izrazeno drugom rijeci u veznickom izrazu."  dodati kao vezničke skupine</span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Ako se pojavljuje i kao gornji član korelatora: ako… takav, ako… to, ako … a ono (Katičić 292/2923)  PODRŽITE NEOVISNU KAZALIŠNU SCENU U HRVATSKOJ Ako ni zbog čega drugoga, a to stoga što je još uvijek uopće ŽIVA.</span></span></p>
 <p align="justify" style="margin:0pt;"><span class="vanjska_poveznica"> <span class="vanjska_poveznica__izvor">Kolokacijska baza hrvatskoga jezika: </span> <a class="vanjska_poveznica__poveznica" href="http://ihjj.hr/kolokacije/search/?q=ako&amp;search_type=basic" target="_blank">http://ihjj.hr/kolokacije/search/?q=ako&amp;search_type=basic</a></span></p>
-poraba__uporaba">Katičić: "U realnim protazama javljaju se i veznicki izrazi samo ako, nego ako, nego ako li, bas ako, istom ako, vec ako. U svakom od tih izraza pogodbeni veznik ako dobiva jos posebno znacenje izrazeno drugom rijeci u veznickom izrazu." &nbsp;dodati kao vezničke skupine</span></span></bdo></p>
+poraba">Katičić: "U realnim protazama javljaju se i veznicki izrazi samo ako, nego ako, nego ako li, bas ako, istom ako, vec ako. U svakom od tih izraza pogodbeni veznik ako dobiva jos posebno znacenje izrazeno drugom rijeci u veznickom izrazu." &nbsp;dodati kao vezničke skupine</span></span></bdo></p>
 
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Ako se pojavljuje i kao gornji član korelatora: ako… takav, ako… to, ako … a ono (Katičić 292/2923) &nbsp;PODRŽITE NEOVISNU KAZALIŠNU SCENU U HRVATSKOJ Ako ni zbog čega drugoga, a to stoga što je još uvijek uopće ŽIVA.</span></span></bdo></p>
 
 <p align="justify" style="margin:0pt;"><span class="vanjska_poveznica"> <span class="vanjska_poveznica__izvor">Kolokacijska baza hrvatskoga jezika: </span> <span class="vanjska_poveznica__poveznica">http://ihjj.hr/kolokacije/search/?q=ako&amp;search_type=basic</span></span></bdo></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">akoli</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="akoli" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">akoli</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__stilska_odrednica">zast.</span><span class="Definicija"><span class="Definicija__definicija"> uvjetna rečenica</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - .Amore, ti misli dopusti mi lude: dokle živim mudro, ćutim sveđ’ se loše,bez volje i slasti dani mi se troše, akoli iz mene planuća ne bude. </span></p>
 <span class="Primjer__Izvor"> Mirko Tomasović. Prepjevi iz romanskog pjesništva. 2006.</span><span class="Primjer"></span>
@@ -666,7 +325,7 @@ poraba__uporaba">Katičić: "U realnim protazama javljaju se i veznicki izrazi s
 <span class="Primjer__Izvor"> trecidan.hr</span>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">U primjerima veznik <i>akoli</i> upotrebljavaju Raguž te Silić i Pranjković, ali ga ne navode kao veznik uvjetnih rečenica.Veznik <i>ako li</i> navodi Katičić, vidi <i>ako li</i>.</span></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">akoprem</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="akoprem" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">akoprem</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__stilska_odrednica">zast.</span><span class="Definicija"><span class="Definicija__definicija"> dopusna rečenica</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Blažić mu je vjerovao, pa akoprem su se svi protivili, pusti ga Gjuro Turić.</span></p>
 <span class="Primjer__Izvor"> Darovi svieta </span>
@@ -694,8 +353,8 @@ poraba__uporaba">Katičić: "U realnim protazama javljaju se i veznicki izrazi s
 <p align="justify" style="margin:0pt;"><span class="Subentry"><span class="Subentry__LemmaSign"> akoprem… to</span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__stilska_odrednica">zast.</span><span class="Definicija"><span class="Definicija__definicija"> dopusna rečenica</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Ali čudnovato! Akoprem dobro plemenito srce Janičino Krivudića nije više osuđivalo, to ga je neka tajna slutnja njezina ipak svejednako korila s licumjerstva i zloće.</span></p>
-<span class="Primjer__Izvor"> Mirko Bogović. Slava i ljubav</span><span class="Tvorbena_raz"> <span class="Tvorbena_raz__tvorba">Tvorba: ako-prem, </span></span>r__Izvor"> Mirko Bogović. Slava i ljubav</span><span class="Tvorbena_raz"> <span class="Tvorbena_raz__tvorba">Tvorba: ako-prem, </span></span></div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">àli </span><span class="Lemma__LemmaSign">ali</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
+<span class="Primjer__Izvor"> Mirko Bogović. Slava i ljubav</span><span class="Tvorbena_raz"> <span class="Tvorbena_raz__tvorba">Tvorba: ako-prem, </span></span>rko Bogović. Slava i ljubav</span><span class="Tvorbena_raz"> <span class="Tvorbena_raz__tvorba">Tvorba: ako-prem, </span></span></div>
+<p align="justify" class="accordion" id="ali" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">àli </span><span class="Lemma__LemmaSign">ali</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"><span class="Definicija"><span class="Definicija__definicija"> suprotna rečenica</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> -  Tamo si je autor teksta malo zakomplicirao život, ali sve je dobro prošlo.</span></p>
 <span class="Primjer"></span>
@@ -725,34 +384,35 @@ poraba__uporaba">Katičić: "U realnim protazama javljaju se i veznicki izrazi s
 <p align="justify" style="margin:0pt;"><span class="Normativna_nap">• <span class="Normativna_nap__napomena">Brabec, Hraste i Živković spominju i rastavni veznik <i>ali</i>, za koji nismo našli potvrda: "Rastavne recenice vezu se veznikom ili, a u narodnom govoru sa ja, jali, ali." (1970: 202)</span></span></p>
 <p align="justify" style="margin:0pt;"><span class="vanjska_poveznica"> <span class="vanjska_poveznica__izvor">Kolokacijska baza hrvatskoga jezika: </span> <a class="vanjska_poveznica__poveznica" href="http://ihjj.hr/kolokacije/search/?q=ali&amp;search_type=basic" target="_blank">http://ihjj.hr/kolokacije/search/?q=ali&amp;search_type=basic</a></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">ama</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="ama" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">ama</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__stilska_odrednica">zast.</span><span class="Definicija"><span class="Definicija__definicija"> suprotna rečenica</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Čuvaj mi piliće, da ih štogod ne odnese; onda pomuzi krave, ama čuvaj da ne podoje telad. </span></p>
 <span class="Primjer__Izvor"> Slavoljub Penkala</span><span class="Primjer"></span>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Hoću da ustanem, da pobjegnem, ama ne mogu: ležim ko prikovan.</span></p>
 <span class="Primjer__Izvor"> Jakša Kušan: U procijepu</span>
 <p align="justify" style="margin:0pt;"><span class="Normativna_nap">• <span class="Normativna_nap__napomena">Suprotni veznik <i>ama</i> navodi Katičić. kao zastarjeli, poetski. Maretić (163: 538) o vezniku <i>ama</i> piše: "Veznik ama uzet je iz turskoga jezika, isto tako i veznik ele i (veoma rijetki) ema, a veznik ma iz talijanskog."  Maretićevi su primjeri: i mačka je kralja gledala, ama ga se nije bojala, nar. posl. 103, vuk na vuka ni po noci neće, ama hoce junak na junaka, nar. pjes., 4, 431. Veznik je potvrđen i u Akademijinu rječniku. Napominje se da se nalazi samo u Vukovu rječniku. U korpusima je <i>ama</i> u pravilu potvrđeno kao pojačajna čestica (intenzifikator) koji najčešće dolazi uz intenzifikator <i>baš</i>, npr. <i>Čini se kako ama baš svatko može raditi svašta.</i>, <i>Svi znamo da za te laži nemaju ama baš nikakvih dokaza.</i>. U tim je rečenicama čestica <i>ama</i> sinonimna čestici <i>ali</i>: <i>Do sada nije bilo ali baš nikakvih incidenata.</i>, <i>Prika moj, ja nemam više nikakvih briga… ali baš nikakvih… </i></span></span></p>
+</p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">bilo… bilo</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="bilo… bilo" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">bilo… bilo</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"><span class="Definicija"><span class="Definicija__definicija"> rastavna rečenica</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Bit će sve u redu, bilo da ostaneš, bilo da otputuješ.</span></p>
 <p align="justify" style="margin:0pt;"><span class="Normativna_nap">• <span class="Normativna_nap__napomena">Pavešić (1971: 388) navodi <i>bilo</i> kao rastavni veznik, ali uvijek je riječ o udvojenom vezniku <i>bilo… bilo</i>. Kao udvojeni rastavni veznik navodi ga Raguž. Sinoniman s ili… ili. Spominje i mogućnost bilo… ili.</span></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">bo</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="bo" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">bo</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__stilska_odrednica">zast.</span><span class="Definicija"><span class="Definicija__definicija"> uzročna rečenica</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Za tih nemira bude ubijen i grof Meinfrid, samo po imenu Niemac a porieklom Slaven; bijaše bo već nastao običaj, da se vladaoci slavski zovu i njemačkim imenom uz domaće (n. pr. ljetopis kaže: »Henricus rex, Prebislaus slavonice nominatus«).</span></p>
 <span class="Primjer__Izvor"> Franjo Marković. Kohan i Vlasta.</span><span class="Primjer"></span>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Katičić ne daje primjer za uzročni veznik <i>bo</i>, samo ga spominje: "Pod posebnim stilskim uvjetima javljaju se u hrvatskom književnom jeziku jos uzročni veznici jerbo, pošto, e, gdje, zašto i bo te veznicki izrazi zato što, zbog toga što, uslijed toga što, zahvaljujući tomu što i sl.";  "U starinskom stilu hrvatskoga književnog jezika javlja se veznik <i>jer</i> još i u proširenu obliku <i>jerbo</i>, srastao s danas potpuno zastarjelim uzročnim veznikom <i>bo</i>, koji susrecemo jos jedino u starijim tekstovima." (str. 267); </span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Katičić navodi <i>bo</i> i kao veznik objasnidbenih nezavisnosloženih rečenica. Donosi primjer: Istina bo postat ce zivotom, uvjereni smo, i bez vas i bez nas (I. Mazuranic 131). Katičić naziv <i>objasnidbene rečenice</i> upotrebljava i za vrstu nezavisnosloženih i za vrstu zavisnosloženih rečenica. Međutim, pitanje je je li tu tom primjeru <i>bo </i>veznik. On može mijenjati mjesto u rečenici i ponaša se kao npr. pojačajna čestica <i>pak</i>.</span></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">budi</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="budi" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">budi</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__stilska_odrednica">zast.</span><span class="Definicija"><span class="Definicija__definicija"> uvjetna rečenica</span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Katičić (2002: 313):"U starinskom i puckom jeziku javlja se jos pogodbeni veznik budi i veznicki izraz budi li. Uz pogodbeno znacenje ima taj veznik jos znacenje »kad vec«, pa se te recenice priblizavaju dopusnima." Sve potvrde iz narodnih pjesama: "Bud' m izakla konja na livadi, / zast' mi zakla čedo u koljevci (Npj. 2,17) - Bud' me bratis, sto mi ženu daješ (Npj. 2, 361) - Bud' si, bego, čohu ukopao, / ti nijesi srebro ukopao (Npj. 3,375) -Bud predobi grada Kolasina, / što ce činit od drugih gradova (Npj. 5, 398) - Bud'si luda a nejaka, što se udade? (Npj. herc. 303) -Bud' ih bog dade, kako ih sastade (N posl. 30) - Bud' snaha u rod, tud svekrva u poprd (N posl. 30) - Bud' ja, more, tvoje dobro kudim, a zasto ga ti kudiš? (N posl. 254) - Bud' li kažeš da si Crnogorac, / poznaješ li druga ikakvoga / u mojemu drustvu velikome? (Npj. 5, 534) - Budi li ideš na vojsku, / kome me mladu ostavljaš (Rj.)"</span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Subentry"><span class="Subentry__LemmaSign"> budi li</span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Sense"><span class="Definicija"><span class="Definicija__definicija"> uvjetna rečenica</span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Katičić: starinski i pučki</span></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">dȁ </span><span class="Lemma__LemmaSign">da</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="da" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">dȁ </span><span class="Lemma__LemmaSign">da</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Definicija"><span class="Definicija__definicija"> predikatna rečenica</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Automobil mu je da ga nema u susjedstvu.</span></p>
 <span class="Primjer"></span>
@@ -1196,7 +856,7 @@ poraba__uporaba">Katičić: "U realnim protazama javljaju se i veznicki izrazi s
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Veznik <i>da</i> u mnogim se subjektnim (<i>Priča se da je dobro.</i>)i objektnim (<i>Čujem da je dobro.</i>) rečenicama može zamijeniti veznikom <i>kako</i>. Oni ipak imaju različitu stilsku vrijednost, pa je uporaba veznika <i>da</i> u takvim rečenicama stilski neutralna, a uporaba veznika <i>kako</i> pripada višemu, biranijemu stilu. </span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Pranjković, Ivo. Vezničko i nevezničko da u hrvatskome jeziku // Riječki filološki dani, 7 / Srdoč-Konestra, Ines ; Vranić, Silvana (ur.). Rijeka: Međunarodni znanstveni skup Riječki filološki dani, 2008. str. 505-515</span></span></p>
 <p align="justify" style="margin:0pt;"><span class="vanjska_poveznica"> <span class="vanjska_poveznica__izvor">Kolokacijska baza hrvatskoga jezika: </span> <a class="vanjska_poveznica__poveznica" href="http://ihjj.hr/kolokacije/search/?q=da&amp;search_type=basic" target="_blank">http://ihjj.hr/kolokacije/search/?q=da&amp;search_type=basic</a></span></p>
-stify" style="margin:0pt;"><span class="Subentry"><span class="Subentry__LemmaSign"> zbog toga da</span></span></bdo></p>
+tyle="margin:0pt;"><span class="Subentry"><span class="Subentry__LemmaSign"> zbog toga da</span></span></bdo></p>
 
 <p align="justify" style="margin:0pt;"><span class="Sense"><span class="Definicija"><span class="Definicija__definicija"> namjerna rečenica</span></span></span></bdo></p>
 
@@ -1216,7 +876,7 @@ stify" style="margin:0pt;"><span class="Subentry"><span class="Subentry__LemmaSi
 
 <p align="justify" style="margin:0pt;"><span class="vanjska_poveznica"> <span class="vanjska_poveznica__izvor">Kolokacijska baza hrvatskoga jezika: </span> <span class="vanjska_poveznica__poveznica">http://ihjj.hr/kolokacije/search/?q=da&amp;search_type=basic</span></span></bdo></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">dȁklē </span><span class="Lemma__LemmaSign">dakle</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="dakle" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">dȁklē </span><span class="Lemma__LemmaSign">dakle</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Definicija"><span class="Definicija__definicija"> uvodi zaključak</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Prvi je put tehnologija vibracijskog vježbanja upotrebljena na ruskim astronautima, koji su u Svemiru, dakle bez blagotvornog utjecaja gravitacije na Zemlji, provodili trostruko dulje razdoblje od njihovih američkih kolega bez posljedica za zdravlje.</span></p>
 <span class="Primjer"></span>
@@ -1227,7 +887,7 @@ stify" style="margin:0pt;"><span class="Subentry"><span class="Subentry__LemmaSi
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Potpisi se skupljaju na teritoriju cijele Hrvatske, u organizaciji građana za građane, dakle niti jedna politička stranka ne stoji iza ove inicijative.</span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">U gramatikama Silić-Pranjković i Hudeček-Mihaljević problematizira se status zaključnih rečenica kao nezavisnosloženih rečenica, a veznici koji se uobičajeno navode kao veznici zaključnih rečenica (dakle, stoga, zato) smatraju se rečeničnim konektorima. Ostali veznici koji se uobičajeno navode kao veznici zaključnih rečenica (stoga što, zato što) veznici su zavisnosloženih (uzročnih) rečenica.</span></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">dȍk </span><span class="Lemma__LemmaSign">dok</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="dok" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">dȍk </span><span class="Lemma__LemmaSign">dok</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Sense__stilska_odrednica">razg.</span><span class="Definicija"><span class="Definicija__definicija"> suprotna rečenica, izriče se izrazita suprotnost: iznevjereno očekivanje ili neostvarena posljedica </span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Općina Pitomača svojom je postojećom Odlukom o ugostiteljskoj djelatnosti definirala radno vrijeme ugostiteljskih objekata na području općine, dakle pravnih osoba, dok to nije ograničila i na privatne objekte.</span></p>
 <p align="justify" style="margin:0pt;"><span class="Normativna_nap">• <span class="Normativna_nap__napomena">U hrvatskome standardnome jeziku umjesto veznika <i>dok</i>, koji pripada razgovornome stilu, bolje je u suprotnoj rečenici upotrebljavati veznik <i>kad</i>.</span></span></p>
@@ -1295,7 +955,7 @@ stify" style="margin:0pt;"><span class="Subentry"><span class="Subentry__LemmaSi
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Katičić</span></span></p>
 <p align="justify" style="margin:0pt;"><span class="vanjska_poveznica"> <span class="vanjska_poveznica__izvor">Kolokacijska baza hrvatskoga jezika: </span> <a class="vanjska_poveznica__poveznica" href="http://ihjj.hr/kolokacije/search/?q=dok&amp;search_type=basic" target="_blank">http://ihjj.hr/kolokacije/search/?q=dok&amp;search_type=basic</a></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">dòkad </span><span class="Lemma__LemmaSign">dokad</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="dokad" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">dòkad </span><span class="Lemma__LemmaSign">dokad</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Definicija"><span class="Definicija__definicija"> uvodi pitanje o vremenskoj granici, o vremenu u kojemu će što završiti </span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> -  Dokad će biti dobro ako je meni dobro? </span></p>
 <span class="Primjer"></span>
@@ -1318,10 +978,10 @@ stify" style="margin:0pt;"><span class="Subentry"><span class="Subentry__LemmaSi
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Moj prijedlog je da se nastavi igra sve dok i zadnji ne bude u plusu, pa nek traje dokad treba, a svaka 3 mjeseca proglašavamo (pobjednička) međuvremena..</span></p>
 <p align="justify" style="margin:0pt;"><span class="Poveznice"> <span class="References">SINONIMI:  <span class="References">kada</span> do kada :5<span class="referenceseparator">, </span><span class="References">dokada</span> :5<span class="referenceseparator">, </span><span class="References">dokle</span> :5</span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Normativna_nap">• <span class="Normativna_nap__napomena">Neki vremenski i mjesni prilozi tvoreni dodavanjem prefiksa (prijedloga) prilogu <i>kad</i>, <i>tad</i>, <i>sad</i>, <i>tud</i>, npr. <i>dokad</i>, <i>dokud</i>, <i>dosad</i>, <i>dotad</i>, <i>dotud</i>, <i>otad</i>, <i>otkad</i>, <i>otkud</i>, <i>otud</i>, <i>zasad</i> pišu se nesastavljeno kad se prilog želi posebno istaknuti i naglasiti. U prijedložnome izrazu (prijedlog + prilog) prilog se piše s naveskom, npr. <i>Ne znam do kada će to trajati...</i></span></span></p>
-<span class="Tvorbena_raz"> <span class="Tvorbena_raz__tvorba">Tvorba: do-kad, </span></span>trajati...</i></span></span></bdo></p>
+<span class="Tvorbena_raz"> <span class="Tvorbena_raz__tvorba">Tvorba: do-kad, </span></span>/i></span></span></bdo></p>
 <span class="Tvorbena_raz"> <span class="Tvorbena_raz__tvorba">Tvorba: do-kad, </span></span></div>? 
 
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">dokàda </span><span class="Lemma__LemmaSign">dokada</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="dokada" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">dokàda </span><span class="Lemma__LemmaSign">dokada</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Definicija"><span class="Definicija__definicija"> uvodi pitanje o vremenskoj granici, o vremenu u kojemu će što završiti </span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Pregovori idu dalje, ali dokada?</span></p>
 <span class="Primjer"></span>
@@ -1345,9 +1005,9 @@ stify" style="margin:0pt;"><span class="Subentry"><span class="Subentry__LemmaSi
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">5</span> <span class="Sense__ograda">(u vezničkoj funkciji)</span><span class="Definicija"><span class="Definicija__definicija"> vremenska rečenica</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Sastanak traje dokada traje.</span></p>
 <p align="justify" style="margin:0pt;"><span class="Poveznice"> <span class="References">SINONIMI:  <span class="References">kada</span> do kada :5<span class="referenceseparator">, </span><span class="References">dokad</span> :5<span class="referenceseparator">, </span><span class="References">dokle</span> :5</span></span></p>
-<span class="Tvorbena_raz"> <span class="Tvorbena_raz__tvorba">Tvorba: do-kada, </span></span>/span> :5</span></span></bdo></p>
+<span class="Tvorbena_raz"> <span class="Tvorbena_raz__tvorba">Tvorba: do-kada, </span></span>pan></span></bdo></p>
 <span class="Tvorbena_raz"> <span class="Tvorbena_raz__tvorba">Tvorba: do-kada, </span></span></div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">dokle</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="dokle" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">dokle</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Definicija"><span class="Definicija__definicija"> uvodi pitanje o vremenskoj granici, o vremenu u kojemu će što završiti</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Dokle ću, Gospodine, zapomagati, a da ne čuješ?</span></p>
 <p align="justify" style="margin:0pt;"><span class="Poveznice"> <span class="References">SINONIMI:  <span class="References">kada</span> do kada :1<span class="referenceseparator">, </span><span class="References">dokad</span> :1<span class="referenceseparator">, </span><span class="References">dokada</span> :1</span></span></p>
@@ -1390,11 +1050,11 @@ stify" style="margin:0pt;"><span class="Subentry"><span class="Subentry__LemmaSi
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - U tim se stanjima dijagnoza akutne leukemije ne može potvrditi dokle god se citološkim pretragama ne nađu blasti. </span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">sve dotle dokle god, i to dokle god: Tako će ostati sve dotle dokle god se ponašamo kao da je u jeziku (hrvatskom) sve dopušteno, jer je, kako se često čuje, glavno da se razumijemo. </span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Pranjković ovaj veznika navodi kao veznik graničnih (terminativnih) vremenskih rečenica.</span></span></p>
-jer je, kako se često čuje, glavno da se razumijemo. </span></span></bdo></p>
+o se često čuje, glavno da se razumijemo. </span></span></bdo></p>
 
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Pranjković ovaj veznika navodi kao veznik graničnih (terminativnih) vremenskih rečenica.</span></span></bdo></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">dòkud </span><span class="Lemma__LemmaSign">dokud</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="dokud" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">dòkud </span><span class="Lemma__LemmaSign">dokud</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Definicija"><span class="Definicija__definicija"> uvodi pitanje o mjesnoj granici, koliko daleko</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> -  Dokud seže bezobrazluk i licemjerje takvih?</span></p>
 <p align="justify" style="margin:0pt;"><span class="Poveznice"> <span class="References">SINONIMI:  <span class="References">dokle</span> :6<span class="referenceseparator">, </span><span class="References">dokuda</span> :1<span class="referenceseparator">, </span><span class="References">kuda</span> do kuda :1</span></span></p>
@@ -1421,7 +1081,7 @@ jer je, kako se često čuje, glavno da se razumijemo. </span></span></bdo></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Izrazito je češća uporaba priloga <i>dokud</i> od uporabe priloga <i>dokuda</i>. </span></span></p>
 </div>? 
 
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">dòkuda </span><span class="Lemma__LemmaSign">dokuda</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="dokuda" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">dòkuda </span><span class="Lemma__LemmaSign">dokuda</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Definicija"><span class="Definicija__definicija"> Dokuda uvodi pitanje o mjesnoj granici, koliko daleko.</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Dokuda seže vaša dobrota? </span></p>
 <p align="justify" style="margin:0pt;"><span class="Poveznice"> <span class="References">SINONIMI:  <span class="References">dokle</span> :6<span class="referenceseparator">, </span><span class="References">dokud</span> :1<span class="referenceseparator">, </span><span class="References">kuda</span> do kuda :1</span></span></p>
@@ -1442,7 +1102,7 @@ jer je, kako se često čuje, glavno da se razumijemo. </span></span></bdo></p>
 <span class="Tvorbena_raz"> <span class="Tvorbena_raz__tvorba">Tvorba: do-kuda, </span></span>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Izrazito je češća uporaba priloga <i>dokud</i> od uporabe priloga <i>dokuda</i>. </span></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">dòčīm </span><span class="Lemma__LemmaSign">dočim</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="dočim" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">dòčīm </span><span class="Lemma__LemmaSign">dočim</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Definicija"><span class="Definicija__definicija"> suprotna rečenica </span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Jednom će sinu omogućiti visoko obrazovanje, dočim će drugom sinu odrediti da ima orati i kopati.</span></p>
 <span class="Primjer"></span>
@@ -1466,7 +1126,7 @@ jer je, kako se često čuje, glavno da se razumijemo. </span></span></bdo></p>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">3</span> <span class="Definicija"><span class="Definicija__definicija"> vremenska rečenica, radnja odnovne i zavisne surečenice zbivaju se istodobno</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> -  jednom će sinu omogućiti visoko obrazovanje, dočim će drugom sinu odrediti da ima orati i kopati. </span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">e da</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="e da" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">e da</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Definicija"><span class="Definicija__definicija"> namjerna rečenica</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - A sve to valja sačuvati i oteti zaboravu e da bi živjelo s budućim generacijama.</span></p>
 <span class="Primjer"></span>
@@ -1474,8 +1134,9 @@ jer je, kako se često čuje, glavno da se razumijemo. </span></span></bdo></p>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">2</span> <span class="Definicija"><span class="Definicija__definicija"> rečenica iznevjerenoga očekivanja</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Redovno je slao novac svojoj obitelji koja mu je toliko nedostajala da se naposljetku vratio pod afričko sunce, e da bi ga se obitelj odrekla jer je prekinuo siguran dotok toliko željene strane valute. </span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">I u zapisu eda.</span></span></p>
+</span></bdo></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">e</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="e" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">e</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Sense__stilska_odrednica">zast.</span><span class="Definicija"><span class="Definicija__definicija"> uzročna rečenica</span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Kao uzročni veznik (u starinskom i pučkom govoru) navodi ga Katičić, npr. Car hocase izgubiti ljubu /e mu ljuba mnoga sakrivila (Npj. 2,26). Katičić, 274.</span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">2</span> <span class="Sense__stilska_odrednica">zast.</span><span class="Definicija"><span class="Definicija__definicija"> posljedična rečenica</span></span></span></p>
@@ -1483,9 +1144,9 @@ jer je, kako se često čuje, glavno da se razumijemo. </span></span></bdo></p>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">3</span> <span class="Sense__stilska_odrednica">zast.</span><span class="Definicija"><span class="Definicija__definicija"> objektna rečenica</span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Kao veznik u objektnim rečenicama (Katičić: izrični veznik) (u starinskom i svečanom izričaju) navodi ga Katičić, npr. Zbori mlada e ih doma nema (Rj. pod e).  "Izricne recenice s veznikom e uvrstavaju se uz pokazne zamjenice sto stoje uz glagole govorenja." Katičić 357.</span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Normativna_nap">• <span class="Normativna_nap__napomena">Zastarjeli veznik e ("ponešto zastarjeli veznik e") spominje se i u Povijesni pregled, glasovi i oblici 1991: 384, ali se o njemu ne kaže ništa iscrpnije od toga.</span></span></p>
-<p align="justify" style="margin:0pt;"><span class="Normativna_nap">• <span class="Normativna_nap__napomena">Zahvaljujući svojoj polifunkcionalnosti i posvemašnjoj desemantiziranosti, tj. nediferenciranosti, taj veznik uvodi mnoge i različite ustrojstveno-značenjske tipove rečenica, različite čak i kategorijalno, tj. različite po sintaktičkome tipu veze.  Arj ima dva veznika e različita i postanjem i značenjem (po Vukojević (knjig): ustrojstvenoznačenjskom tipu rečenice koju uvode): prvi je e okrnjeno jer ili er koje se javlja u Crnoj Gori i Boki kotorskoj u 18. st. i izražava dvije vrste izričnih odnosa, one koje se inače izražavaju uzročnim veznikom jer i one koje se inače izražavaju uzročnim veznicima što i zato što, i izrične odnose uz glagole govorenja, koji se inače izražavaju veznikom da, a drugi je e namjerni veznik, vjerojatno od eda ili jeda.  Sve su potvrde koje se donose za prvi e srpske, a od onih koje se donose za drugi e jedna je srpska i jedna hrvatska…. (vidi citat u knizi, poglavlje o vezniku e)</span></span></p>
+<p align="justify" style="margin:0pt;"><span class="Normativna_nap">• <span class="Normativna_nap__napomena">Zahvaljujući svojoj polifunkcionalnosti i posvemašnjoj desemantiziranosti, tj. nediferenciranosti, taj veznik uvodi mnoge i različite ustrojstveno-značenjske tipove rečenica, različite čak i kategorijalno, tj. različite po sintaktičkome tipu veze. </s><s> Arj ima dva veznika e različita i postanjem i značenjem (po Vukojević (knjig): ustrojstvenoznačenjskom tipu rečenice koju uvode): prvi je e okrnjeno jer ili er koje se javlja u Crnoj Gori i Boki kotorskoj u 18. st. i izražava dvije vrste izričnih odnosa, one koje se inače izražavaju uzročnim veznikom jer i one koje se inače izražavaju uzročnim veznicima što i zato što, i izrične odnose uz glagole govorenja, koji se inače izražavaju veznikom da, a drugi je e namjerni veznik, vjerojatno od eda ili jeda. </s><s> Sve su potvrde koje se donose za prvi e srpske, a od onih koje se donose za drugi e jedna je srpska i jedna hrvatska…. (vidi citat u knizi, poglavlje o vezniku e)</span></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">ȅda </span><span class="Lemma__LemmaSign">eda</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="eda" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">ȅda </span><span class="Lemma__LemmaSign">eda</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Sense__stilska_odrednica">zast.</span><span class="Definicija"><span class="Definicija__definicija"> namjerna rečenica</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Sve gubiš eda bi više našao. </span></p>
 <span class="Primjer"></span>
@@ -1519,17 +1180,17 @@ jer je, kako se često čuje, glavno da se razumijemo. </span></span></bdo></p>
 <p align="justify" style="margin:0pt;"><span class="Sense"><span class="Definicija"><span class="Definicija__definicija"> posljedična rečenica, prekomjernog uzroka</span></span></span></p>
 <span class="Tvorbena_raz"> <span class="Tvorbena_raz__tvorba">Tvorba: e-da, </span></span>,<span class="Tvorbena_raz"> <span class="Tvorbena_raz__tvorba">Tvorba: e-da, </span></span>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">I u zapisu e da.</span></span></p>
-></span>
+
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">I u zapisu e da.</span></span></bdo></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">ele</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="ele" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">ele</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__stilska_odrednica">zast.</span><span class="Definicija"><span class="Definicija__definicija"> suprotna rečenica</span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Normativna_nap">• <span class="Normativna_nap__napomena">Maretić: Veznik ama uzet je iz turskoga jezika, isto tako i veznik ele i (veoma rijetki) ema, a veznik ma iz talijanskog. Maretić, Gramatika hrvatskoga ili srpskoga književnog jezika (1963: 538): Maretićev je primjeri: ona se zatezala i suprotila, ele najposlije mati je kojekako namoli. nar. prip. 177.</span></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">ema</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="ema" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">ema</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Normativna_nap">• <span class="Normativna_nap__napomena">Maretić: Veznik ama uzet je iz turskoga jezika, isto tako i veznik ele i (veoma rijetki) ema, a veznik ma iz talijanskog. Maretić, Gramatika hrvatskoga ili srpskoga književnog jezika (1963: 538): Maretićev je primjer: ovako joj rijec besjedili, ema veli sirota Rok- sandra. nar. pjes. 2, 127.</span></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">gdjȅ </span><span class="Lemma__HomonymNumber">1</span><span class="Lemma__LemmaSign">gdje</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="gdje" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">gdjȅ </span><span class="Lemma__HomonymNumber">1</span><span class="Lemma__LemmaSign">gdje</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Definicija"><span class="Definicija__definicija"> uvodi pitanje o mjestu i znači u kojemu mjestu, na kojemu mjestu</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Kritičari, gdje ste?</span></p>
 <span class="Primjer"></span>
@@ -1584,7 +1245,7 @@ jer je, kako se često čuje, glavno da se razumijemo. </span></span></bdo></p>
 <p align="justify" style="margin:0pt;"><span class="Normativna_nap">• <span class="Normativna_nap__napomena">Prilogom <i>gdje</i> pita se o mjestu na kojemu se tko ili što nalazi, prilogom <i>kamo</i> pita se za cilj čijega kretanja, a prilogom <i>kuda</i> pita se za njegov smjer. U uporabi tih priloga često se griješi tako da se prilogom <i>gdje</i> pita o cilju čijega kretanja, npr. <i>Gdje ideš?</i> umjesto pravilnoga pitanja <i>Kamo ideš?</i>, a prilogom <i>kuda</i> o cilju čijega kretanja, npr. <i>Kuda ideš večeras?</i> umjesto pravilnoga pitanja <i>Kamo ideš večeras?</i> Prilog <i>gdje</i> ne treba nikad upotrebljavati uz glagole koji označuju kretanje. </span></span></p>
 <p align="justify" style="margin:0pt;"><span class="vanjska_poveznica"> <span class="vanjska_poveznica__izvor">Kolokacijska baza hrvatskoga jezika: </span> <a class="vanjska_poveznica__poveznica" href="http://ihjj.hr/kolokacije/search/?q=gdje&amp;search_type=basic" target="_blank">http://ihjj.hr/kolokacije/search/?q=gdje&amp;search_type=basic</a></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">gdjȅ </span><span class="Lemma__HomonymNumber">2</span><span class="Lemma__LemmaSign">gdje</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="gdje" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">gdjȅ </span><span class="Lemma__HomonymNumber">2</span><span class="Lemma__LemmaSign">gdje</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"><span class="Definicija"><span class="Definicija__definicija"> objektna rečenica</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> -  Ja sam to gledao i čuo sam gdje Miklenić kaže da je on autor teksta i da je to njegov stav.</span></p>
 <span class="Primjer"></span>
@@ -1594,11 +1255,11 @@ jer je, kako se često čuje, glavno da se razumijemo. </span></span></bdo></p>
 <p align="justify" style="margin:0pt;"><span class="Poveznice"> <span class="References">SINONIMI:  <span class="References">da</span> :3<span class="referenceseparator">, </span><span class="Lemma__HomonymNumber">1</span><span class="References">kako</span>:2</span></span></p>
 <p align="justify" style="margin:0pt;"><span class="vanjska_poveznica"> <span class="vanjska_poveznica__izvor">Kolokacijska baza hrvatskoga jezika: </span> <a class="vanjska_poveznica__poveznica" href="http://ihjj.hr/kolokacije/search/?q=gdje&amp;search_type=basic" target="_blank">http://ihjj.hr/kolokacije/search/?q=gdje&amp;search_type=basic</a></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">gdjeli</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="gdjeli" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">gdjeli</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"><span class="Definicija"><span class="Definicija__definicija"> suprotna rečenica</span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Kao suprotni veznik navodi ga Katičić. Nije potvrđen u korpusima suvremenoga hrvatskog jezika. Ne bilježi ga Akademijin rječnik.</span></span></p>
 <span class="Tvorbena_raz"> <span class="Tvorbena_raz__tvorba">Tvorba: gdje-li, </span></span></div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">i</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="i" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">i</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Definicija"><span class="Definicija__definicija"> I povezuje riječi, označuje pridruživanje, dodavanje, zatvara niz u kojemu se nabraja.</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Ovdje ćete moći pronaći sve informacije vezane uz djelovanje i aktivnosti zbora.</span></p>
 <span class="Primjer"></span>
@@ -1684,11 +1345,11 @@ jer je, kako se često čuje, glavno da se razumijemo. </span></span></bdo></p>
 <p align="justify" style="margin:0pt;"><span class="Subentry"><span class="Subentry__LemmaSign"> i… i</span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Normativna_nap">• <span class="Normativna_nap__napomena">„Kad surečenice čine surečenični niz, onda se sastavni veznik u pravilu pojavljuje samo izmedju dviju posljednjih surecenica i ima funkciju zatvaranja surečeničnoga niza, npr. <i>Putovali su dobro, došli u zakazano vrijeme, ušli u dvoranu, posjedali oko velikoga hrastova stola i započeli pregovore.</i>” Silić i Pranjković 2005: 322</span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Vezničke skupine: i onda, i po tome, i prema tome, i radi toga, i tada, i tako, i time, i to, i utoliko, i zatim, i zbog toga</span></span></p>
-n class="Normativna_nap__napomena">„Kad surečenice čine surečenični niz, onda se sastavni veznik u pravilu pojavljuje samo izmedju dviju posljednjih surecenica i ima funkciju zatvaranja surečeničnoga niza, npr. <i>Putovali su dobro, došli u zakazano vrijeme, ušli u dvoranu, posjedali oko velikoga hrastova stola i započeli pregovore.</i>” Silić i Pranjković 2005: 322</span></span></bdo></p>
+="Normativna_nap__napomena">„Kad surečenice čine surečenični niz, onda se sastavni veznik u pravilu pojavljuje samo izmedju dviju posljednjih surecenica i ima funkciju zatvaranja surečeničnoga niza, npr. <i>Putovali su dobro, došli u zakazano vrijeme, ušli u dvoranu, posjedali oko velikoga hrastova stola i započeli pregovore.</i>” Silić i Pranjković 2005: 322</span></span></bdo></p>
 
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Vezničke skupine: i onda, i po tome, i prema tome, i radi toga, i tada, i tako, i time, i to, i utoliko, i zatim, i zbog toga</span></span></bdo></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">iàko </span><span class="Lemma__LemmaSign">iako</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="iako" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">iàko </span><span class="Lemma__LemmaSign">iako</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"><span class="Definicija"><span class="Definicija__definicija"> (uzročno)dopusna, stvarna</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Najčešći simptomi bolesti su bol u prsima, dispneja, vrtoglavica i palpitacija, iako je u najvećem broju slučaja nalaz slučajan. </span></p>
 <span class="Primjer"></span>
@@ -1703,11 +1364,11 @@ n class="Normativna_nap__napomena">„Kad surečenice čine surečenični niz, o
 <span class="Tvorbena_raz"> <span class="Tvorbena_raz__tvorba">Tvorba: i-ako, </span></span>,<span class="Tvorbena_raz"> <span class="Tvorbena_raz__tvorba">Tvorba: i-ako, </span></span>
 <p align="justify" style="margin:0pt;"><span class="vanjska_poveznica"> <span class="vanjska_poveznica__izvor">Hrvatska školska gramatika: </span> <a class="vanjska_poveznica__poveznica" href="https://gramatika.hr/pravilo/dopusne-recenice/103/#pravilo" target="_blank">https://gramatika.hr/pravilo/dopusne-recenice/103/#pravilo</a></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">il</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="il" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">il</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"><span class="Definicija"><span class="Definicija__definicija"> rastavna rečenica</span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Kod Katičića, samo u primjerima.</span></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">ìli </span><span class="Lemma__LemmaSign">ili</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="ili" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">ìli </span><span class="Lemma__LemmaSign">ili</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Definicija"><span class="Definicija__definicija"> Ili povezuje riječi i označuje mogućnost izbora.</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Prirodni plin nalazi svoju široku potrošnju u industriji za tehnološke procese kao gorivo ili kao sirovina te za grijanje ili hlađenje prostora.</span></p>
 <span class="Primjer"></span>
@@ -1736,7 +1397,7 @@ n class="Normativna_nap__napomena">„Kad surečenice čine surečenični niz, o
 <p align="justify" style="margin:0pt;"><span class="vanjska_poveznica"> <span class="vanjska_poveznica__izvor">Kolokacijska baza hrvatskoga jezika: </span> <a class="vanjska_poveznica__poveznica" href="http://ihjj.hr/kolokacije/search/?q=ili&amp;search_type=basic" target="_blank">http://ihjj.hr/kolokacije/search/?q=ili&amp;search_type=basic</a></span></p>
 <p align="justify" style="margin:0pt;"><span class="vanjska_poveznica"> <span class="vanjska_poveznica__izvor">Hrvatska školska gramatika: </span> <a class="vanjska_poveznica__poveznica" href="https://gramatika.hr/pravilo/rastavne-recenice/85/#pravilo" target="_blank">https://gramatika.hr/pravilo/rastavne-recenice/85/#pravilo</a></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">iliti</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="iliti" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">iliti</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Definicija"><span class="Definicija__definicija"> povezuje riječi ili izraze i označuje mogućnost izbora</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Blato, mulj, kaljuža iliti nečija intima, isto je. </span></p>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">2</span> <span class="Definicija"><span class="Definicija__definicija"> uvodi dodatno objašnjenje riječi ili izraza</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
@@ -1753,20 +1414,20 @@ n class="Normativna_nap__napomena">„Kad surečenice čine surečenični niz, o
 <span class="Primjer"></span>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Facebook je najmanje učinkovit u direktnoj prodaji, iliti mali postotak ljudi koji na Faceu nalete na oglas trenutno kupuje proizvod. </span></p>
 <p align="justify" style="margin:0pt;"><span class="Poveznice"><span class="poveznica"> <span class="poveznica__mrtvi">Mrtvi sinonim:</span> <span class="poveznica__poveznica">odnosno</span></span></span></p>
-<span class="Tvorbena_raz"> <span class="Tvorbena_raz__tvorba">Tvorba: ili-ti, </span></span>"Tvorbena_raz"> <span class="Tvorbena_raz__tvorba">Tvorba: ili-ti, </span></span></div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">istom</span></span></p><div class='panel'>
+<span class="Tvorbena_raz"> <span class="Tvorbena_raz__tvorba">Tvorba: ili-ti, </span></span>az"> <span class="Tvorbena_raz__tvorba">Tvorba: ili-ti, </span></span></div>
+<p align="justify" class="accordion" id="istom" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">istom</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"><span class="Definicija"><span class="Definicija__definicija"> vremenska rečenica</span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Kao vremenski veznik spominje ga Pavešić, Težak</span></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">ja</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="ja" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">ja</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"><span class="Definicija"><span class="Definicija__definicija"> rastavna rečenica</span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">BHŽ: Rastavne recenice vezu se veznikom ili, a u narodnom govoru sa ja, jali, ali.</span></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">jali</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="jali" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">jali</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"><span class="Definicija"><span class="Definicija__definicija"> rastavna rečenica</span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">BHŽ: Rastavne recenice vezu se veznikom ili, a u narodnom govoru sa ja, jali, ali.</span></span></p>
 <span class="Tvorbena_raz"> <span class="Tvorbena_raz__tvorba">Tvorba: ja-li, </span></span></div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">jèdīno </span><span class="Lemma__LemmaSign">jedino</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="jedino" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">jèdīno </span><span class="Lemma__LemmaSign">jedino</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Definicija"><span class="Definicija__definicija"> Jedino izriče da se jedan član ili manji dio članova prema određenim svojstvima izuzima iz skupa istovrsnih članova.</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Na kraju zaključuje da je jedino bitna LJUBAV i ništa drugo. </span></p>
 <span class="Primjer"></span>
@@ -1778,12 +1439,12 @@ n class="Normativna_nap__napomena">„Kad surečenice čine surečenični niz, o
 <p align="justify" style="margin:0pt;"><span class="Poveznice"> <span class="References">SINONIMI:  <span class="References">samo</span> :4<span class="referenceseparator">, </span><span class="References">tek</span> :6</span></span></p>
 <p align="justify" style="margin:0pt;"><span class="vanjska_poveznica"> <span class="vanjska_poveznica__izvor">Kolokacijska baza hrvatskoga jezika: </span> <a class="vanjska_poveznica__poveznica" href="http://ihjj.hr/kolokacije/search/?q=jedino&amp;search_type=basic" target="_blank">http://ihjj.hr/kolokacije/search/?q=jedino&amp;search_type=basic</a></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">jedva</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="jedva" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">jedva</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"><span class="Definicija"><span class="Definicija__definicija"> vremenska rečenica</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> -  Jedva smo se vratili, već sam morala u Ljubljanu na jedan dan i onda opet natrag u Zagreb. ???</span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Kao vremenski veznik navodi ga Katičić. Nije li to dio korelatora, npr. jedva… već, jedva… kad</span></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">jȅr </span><span class="Lemma__LemmaSign">jer</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="jer" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">jȅr </span><span class="Lemma__LemmaSign">jer</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"><span class="Definicija"><span class="Definicija__definicija"> uzročna rečenica</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Bez obzira na to gdje provodili godišnji odmor, opustite se i dobro se odmorite jer trebat će vam nova energija za nove radne zadatke. </span></p>
 <span class="Primjer"></span>
@@ -1839,11 +1500,11 @@ n class="Normativna_nap__napomena">„Kad surečenice čine surečenični niz, o
 <p align="justify" style="margin:0pt;"><span class="vanjska_poveznica"> <span class="vanjska_poveznica__izvor">Kolokacijska baza hrvatskoga jezika: </span> <a class="vanjska_poveznica__poveznica" href="http://ihjj.hr/kolokacije/search/?q=jer&amp;search_type=basic" target="_blank">http://ihjj.hr/kolokacije/search/?q=jer&amp;search_type=basic</a></span></p>
 <p align="justify" style="margin:0pt;"><span class="vanjska_poveznica"> <span class="vanjska_poveznica__izvor">Hrvatska školska gramatika: </span> <a class="vanjska_poveznica__poveznica" href="https://gramatika.hr/pravilo/uzrocne-recenice/99/#pravilo" target="_blank">https://gramatika.hr/pravilo/uzrocne-recenice/99/#pravilo</a></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">jera</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="jera" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">jera</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"><span class="Definicija"><span class="Definicija__definicija"> uzročna rečenica</span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Kao uzročni veznik (nar) navodi ga Katičić.</span></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">jerbo</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="jerbo" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">jerbo</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"><span class="Definicija"><span class="Definicija__definicija"> uzročna rečenica</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Rezervirao sam hotel u malom mjestu pored Nürnberga, jerbo je F1 staza pored Nürnberga, zar ne?</span></p>
 <span class="Primjer"></span>
@@ -1852,12 +1513,12 @@ n class="Normativna_nap__napomena">„Kad surečenice čine surečenični niz, o
 <p align="justify" style="margin:0pt 0pt 0pt 10pt;"><span class="kolokacije"></span></p>
 <p align="justify" style="margin:0pt;"><span class="Kolokacija"> <span class="Kolokacija__odrednica">U vezničkim skupinama: </span> <span class="Kolokacija__kolokacija">upravo jerbo, pogotovo jerbo, samo jerbo, jedino jerbo, posebno jerbo, osobito jerbo</span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Poveznice"> <span class="References">SINONIM:  <span class="References">jer</span> jer bo</span></span></p>
-<span class="Tvorbena_raz"> <span class="Tvorbena_raz__tvorba">Tvorba: srastanje: jer-bo, </span></span>nje: jer-bo, </span></span></div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">jere</span></span></p><div class='panel'>
+<span class="Tvorbena_raz"> <span class="Tvorbena_raz__tvorba">Tvorba: srastanje: jer-bo, </span></span>, </span></span></div>
+<p align="justify" class="accordion" id="jere" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">jere</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"><span class="Definicija"><span class="Definicija__definicija"> uzročna rečenica</span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Kao uzročni veznik (nar) navodi ga Katičić.</span></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">kȁd </span><span class="Lemma__LemmaSign">kad</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="kad" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">kȁd </span><span class="Lemma__LemmaSign">kad</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Definicija"><span class="Definicija__definicija"> Kad uvodi pitanje o vremenu, u koje vrijeme.</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Kad ću otpustiti ovaj stres?</span></p>
 <p align="justify" style="margin:0pt;"><span class="Poveznice"> <span class="References">SINONIM:  <span class="References">kada</span> :1</span></span></p>
@@ -1933,11 +1594,11 @@ n class="Normativna_nap__napomena">„Kad surečenice čine surečenični niz, o
 <span class="Tvorbena_raz"> <span class="References">tvorenice <span class="References">dokad</span><span class="referenceseparator">, </span><span class="References">otkad</span></span> <span class="Tvorbena_raz__tvorba">Tvorba: gdjekad, katkad, </span></span>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Mnogo gramatika (Maretić, Barić, BHŽ)navodi kad kao suprotni veznik, v. napomenu uz kadli. Npr. siva gramatika ima primjere Ucini im se da su potpuno sami na sl'ijetu, k a d iz mecave izroni velik sivi vuk. (Sl. Mihalic) - sto ste se raskokodakali k a d su vam svima pune gace. (Sl. Mihalic) - Stao tonuti u san, k a d l i ga trze suskaranje. (A. G. Matoš).  BHŽ: U suprotnim recenicama stoje i neki veznici koji se inace uzimaju u zavisnim recenicama: Provldur htjede svrnuti na cestu, kad magarac stade kao ukopan. Neradnika ne volimo, dok marljive drugove pohvaljujemo. Da su to suprotne recenice, dokazuje i to sto veznike kad i dok mozemo zamijeniti veznikom ali, a da<br>se znacenje recenica ne promijeni. Mjesto kad moze stajati i kadli. </br></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="vanjska_poveznica"> <span class="vanjska_poveznica__izvor">Kolokacijska baza hrvatskoga jezika: </span> <a class="vanjska_poveznica__poveznica" href="http://ihjj.hr/kolokacije/search/?q=kad&amp;search_type=basic" target="_blank">http://ihjj.hr/kolokacije/search/?q=kad&amp;search_type=basic</a></span></p>
-zuje i to sto veznike kad i dok mozemo zamijeniti veznikom ali, a da<br>se znacenje recenica ne promijeni. Mjesto kad moze stajati i kadli. </span></span></bdo></p>
+ sto veznike kad i dok mozemo zamijeniti veznikom ali, a da<br>se znacenje recenica ne promijeni. Mjesto kad moze stajati i kadli. </span></span></bdo></p>
 
 <p align="justify" style="margin:0pt;"><span class="vanjska_poveznica"> <span class="vanjska_poveznica__izvor">Kolokacijska baza hrvatskoga jezika: </span> <span class="vanjska_poveznica__poveznica">http://ihjj.hr/kolokacije/search/?q=kad&amp;search_type=basic</span></span></bdo></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">kàda </span><span class="Lemma__LemmaSign">kada</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="kada" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">kàda </span><span class="Lemma__LemmaSign">kada</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Definicija"><span class="Definicija__definicija"> Kada uvodi pitanje o vremenu, u koje vrijeme.</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Kada si to čuo?</span></p>
 <p align="justify" style="margin:0pt;"><span class="Poveznice"> <span class="References">SINONIM:  <span class="References">kad</span> :1</span></span></p>
@@ -2023,18 +1684,15 @@ zuje i to sto veznike kad i dok mozemo zamijeniti veznikom ali, a da<br>se znace
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Tebe znam od kada znam i Elenu. </span></p>
 <p align="justify" style="margin:0pt;"><span class="Poveznice"> <span class="References">SINONIMI:  <span class="References">otkad</span> :5<span class="referenceseparator">, </span><span class="References">otkada</span> :5<span class="referenceseparator">, </span><span class="References">otkako</span> :2</span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Normativna_nap">• <span class="Normativna_nap__napomena">Neki vremenski i mjesni prilozi tvoreni dodavanjem prefiksa (prijedloga) prilogu <i>kad</i>, <i>tad</i>, <i>sad</i>, <i>tud</i>, npr. <i>dokad</i>, <i>dokud</i>, <i>dosad</i>, <i>dotad</i>, <i>dotud</i>, <i>otad</i>, <i>otkad</i>, <i>otkud</i>, <i>otud</i>, <i>zasad</i> pišu se nesastavljeno kad se prilog želi posebno istaknuti i naglasiti. U prijedložnome izrazu (prijedlog + prilog) prilog se piše s naveskom, npr. <i>Od kada se to počelo, sve se promijenilo, pogotovo stoga što ne znamo do kada će trajati.</i></span></span></p>
-
-
-<p align="justify" style="margin:0pt;"><span class="Normativna_nap">• <span class="Normativna_nap__napomena">Neki vremenski i mjesni prilozi tvoreni dodavanjem prefiksa (prijedloga) prilogu <i>kad</i>, <i>tad</i>, <i>sad</i>, <i>tud</i>, npr. <i>dokad</i>, <i>dokud</i>, <i>dosad</i>, <i>dotad</i>, <i>dotud</i>, <i>otad</i>, <i>otkad</i>, <i>otkud</i>, <i>otud</i>, <i>zasad</i> pišu se nesastavljeno kad se prilog želi posebno istaknuti i naglasiti. U prijedložnome izrazu (prijedlog + prilog) prilog se piše s naveskom, npr. <i>Od kada se to počelo, sve se promijenilo, pogotovo stoga što ne znamo do kada će trajati.</i></span></span></bdo></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">kadli</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="kadli" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">kadli</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"><span class="Definicija"><span class="Definicija__definicija"> Kad uvodi vremensku surečenicu u zavisnosloženoj rečenici kojom se izriče da se zavisne surečenice zbiva istodobno s radnjom glavne surečenice.</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> -  Naime, u to je doba, kako se doznaje u policiji, Slava F. bezbrižno koračala ulicom kadli joj je iznenada prišao nepoznati muškarac i grubo je odgurnuo.</span></p>
 <span class="Primjer"></span>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Nisam u sebi ni završio pokajničku misao, kadli – tres.... bum...</span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">BHŽ, Pavešić, Barić, Raguž: suprotni? Maretić: Suprotni su veznici: a, a ono, a to, ali, da, dok, e, i , ipak, kad, kad ali, kadli, nego, no, opet, pa, (pak), samo, ta, vec. Navodi primjre poput: bjezeci obazru se, kadli njezina mater za njima trci. nar.prip. 118. Međutim, Maretić navodi da i kad može biti suprotni veznika, ali navodi primjere u kojima je moguća dvostruka interpretacija (vremenska i suprotna), poput: Veznik vremena kada (kad) ima i suprotno znacenje, i to: kad se izrice sto nenadano: onako ih opravi Roksandra ko vladike i ko kaludjere, kad eto ti djakona Jovana. Vidjeti kako interpretirati kad</span></span></p>
-<span class="Tvorbena_raz"> <span class="Tvorbena_raz__tvorba">Tvorba: kad-li, </span></span>/span></span></div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">kàkav </span><span class="Lemma__LemmaSign">kakav</span> <span class="Lemma__vrsta_rijeci">zam.</span><span class="Gramaticki_blok"><span class="Oblici"> (<span class="Oblici__naglaseni">G kàkva, DL kàkvu, A kàkav/kàkva, I kàkvīm; <i>ž.</i> kàkva, <i>s.</i> kàkvo</span>)</span></span></span></p><div class='panel'>
+<span class="Tvorbena_raz"> <span class="Tvorbena_raz__tvorba">Tvorba: kad-li, </span></span>n></div>
+<p align="justify" class="accordion" id="kakav" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">kàkav </span><span class="Lemma__LemmaSign">kakav</span> <span class="Lemma__vrsta_rijeci">zam.</span><span class="Gramaticki_blok"><span class="Oblici"> (<span class="Oblici__naglaseni">G kàkva, DL kàkvu, A kàkav/kàkva, I kàkvīm; <i>ž.</i> kàkva, <i>s.</i> kàkvo</span>)</span></span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Sense__ograda">(upitna zamjenica)</span><span class="Definicija"><span class="Definicija__definicija"> Kakav pita za svojstvo ili kakvoću koga ili čega.</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> -  Zato se svaki kršćanin mora upitati: Kakva je moja vjera? Komu ja vjerujem?</span></p>
 <span class="Primjer"></span>
@@ -2073,11 +1731,11 @@ zuje i to sto veznike kad i dok mozemo zamijeniti veznikom ali, a da<br>se znace
 <p align="justify" style="margin:0pt;"><span class="Subentry"><span class="Subentry__LemmaSign"> ma kakav</span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Sense"><span class="Definicija"><span class="Definicija__definicija"> uvodi zavisnu surečenicu u mogućoj (uvjetno)dopusnoj rečenici</span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Pranjković</span></span></p>
-<span class="Tvorbena_raz"> <span class="References"></span></span>čenici</span></span></span></bdo></p>
+<span class="Tvorbena_raz"> <span class="References"></span></span>an></span></span></bdo></p>
 
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Pranjković</span></span></bdo></p>
 <span class="Tvorbena_raz"> <span class="References"></span></span></div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">kàko </span><span class="Lemma__HomonymNumber">1</span><span class="Lemma__LemmaSign">kako</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="kako" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">kàko </span><span class="Lemma__HomonymNumber">1</span><span class="Lemma__LemmaSign">kako</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Definicija"><span class="Definicija__definicija"> Kako uvodi zavisnu surečenicu u subjektnoj rečenici.</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> -  Govori se kako se u životu uvijek treba penjati stepenicu više, no sredstva nitko ne spominje.</span></p>
 <span class="Primjer"></span>
@@ -2101,7 +1759,7 @@ zuje i to sto veznike kad i dok mozemo zamijeniti veznikom ali, a da<br>se znace
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Uvijek se ja dižem noću kako bih nahranila malenog. </span></p>
 <p align="justify" style="margin:0pt;"><span class="Poveznice"> <span class="References">SINONIMI:  <span class="References">eda</span> :1<span class="referenceseparator">, </span><span class="References">da</span> :6<span class="referenceseparator">, </span><span class="References">neka</span> :3</span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">5</span> <span class="Sense__stilska_odrednica">zast.</span><span class="Definicija"><span class="Definicija__definicija"> posljedični</span></span></span></p>
-<p align="justify" style="margin:0pt;"><span class="Normativna_nap">• <span class="Normativna_nap__napomena">Vukojević (knjiga): Veznik kako ponavlja se u našoj gramatičkoj literaturi kao posljedični veznik.  Navode ga Maretić, Katičić i Simeon.  Riječ je o zastarjelome vezniku koji kao veznik raščlanjenih rečenica nije potvrđen u suvremenome jeziku.  Potvrđen je međutim kao korelator u neraščlanjenim rečenicama količinskokakvoćne semantike, u rečenicama dostatnog uzroka i u rečenicama potrebnog uzroka (tako ... kako, dovoljno ... kako, mora ... kako).  Da je riječ o zaista posve zastarjeloj uporabi toga veznika potvrđuje činjenica da se u spomenutih gramatičara nalazi uvijek isti primjer: Sakuje (tj. car) gvozden kovčeg veliki (tj. tako) kako može on u njemu sjediti. </span></span></p>
+<p align="justify" style="margin:0pt;"><span class="Normativna_nap">• <span class="Normativna_nap__napomena">Vukojević (knjiga): Veznik kako ponavlja se u našoj gramatičkoj literaturi kao posljedični veznik. </s><s> Navode ga Maretić, Katičić i Simeon. </s><s> Riječ je o zastarjelome vezniku koji kao veznik raščlanjenih rečenica nije potvrđen u suvremenome jeziku. </s><s> Potvrđen je međutim kao korelator u neraščlanjenim rečenicama količinskokakvoćne semantike, u rečenicama dostatnog uzroka i u rečenicama potrebnog uzroka (tako ... kako, dovoljno ... kako, mora ... kako). </s><s> Da je riječ o zaista posve zastarjeloj uporabi toga veznika potvrđuje činjenica da se u spomenutih gramatičara nalazi uvijek isti primjer: Sakuje (tj. car) gvozden kovčeg veliki (tj. tako) kako može on u njemu sjediti. </span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Katičić: Sakujte gvozden kovčeg veliki kako on može u njemu sjediti.</span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">6</span> <span class="Definicija"><span class="Definicija__definicija"> uzročni</span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Težak-Babić (samo u inverziji), Pavešić, katičić, Pranjković</span></span></p>
@@ -2122,7 +1780,7 @@ zuje i to sto veznike kad i dok mozemo zamijeniti veznikom ali, a da<br>se znace
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">2</span> </span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Veznik <i>da</i> u mnogim se subjektnim (<i>Priča se da je dobro.</i>) i objektnim (<i>Čujem da je dobro.</i>) rečenicama može zamijeniti veznikom <i>kako</i>. Oni ipak imaju različitu stilsku vrijednost, pa je uporaba veznika <i>da</i> u takvim rečenicama u pravilu stilski neutralna, a uporaba veznika <i>kako</i> pripada višemu, biranijemu stilu. </span></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">kàko </span><span class="Lemma__HomonymNumber">2</span><span class="Lemma__LemmaSign">kako</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="kako" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">kàko </span><span class="Lemma__HomonymNumber">2</span><span class="Lemma__LemmaSign">kako</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Definicija"><span class="Definicija__definicija"> Kako uvodi pitanje o načinu, na koji način.</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> -  Kako si povećati šanse za zapošljavanje?</span></p>
 <span class="Primjer"></span>
@@ -2185,8 +1843,9 @@ zuje i to sto veznike kad i dok mozemo zamijeniti veznikom ali, a da<br>se znace
 <p align="justify" style="margin:0pt;"><span class="Sense"><span class="Definicija"><span class="Definicija__definicija"> dopusni</span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">TB, K - vidi i ostale na str. 300</span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Normativna_nap">• <span class="Normativna_nap__napomena">Pleonazam je gomilanje istoznačnih riječi, pri kojemu je značenje jedne riječi već uključeno u značenje druge riječi. Pleonazam je stoga i izraz <i>kako i na koji način</i>. Budući da je <i>kako</i> prilog koji uvodi pitanje o načinu te znači isto što i <i>na koji način</i>, nepotrebno je u istoj rečenici upotrijebiti i <i>kako</i> i <i>na koji način</i>. Umjesto <i>Kako i na koji način planiraš riješiti problem?</i> dovoljno je <i>Na koji način planiraš riješiti problem?</i> ili još kraće i jednostavnije <i>Kako planiraš riješiti problem?</i> </span></span></p>
+</i> prilog koji uvodi pitanje o načinu te znači isto što i <i>na koji način</i>, nepotrebno je u istoj rečenici upotrijebiti i <i>kako</i> i <i>na koji način</i>. Umjesto <i>Kako i na koji način planiraš riješiti problem?</i> dovoljno je <i>Na koji način planiraš riješiti problem?</i> ili još kraće i jednostavnije <i>Kako planiraš riješiti problem?</i> </span></span></bdo></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">kàmo </span><span class="Lemma__LemmaSign">kamo</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="kamo" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">kàmo </span><span class="Lemma__LemmaSign">kamo</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Definicija"><span class="Definicija__definicija"> Kamo uvodi pitanje o cilju kretanja.</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Kamo i kome da idemo? </span></p>
 <span class="Primjer"></span>
@@ -2215,9 +1874,9 @@ zuje i to sto veznike kad i dok mozemo zamijeniti veznikom ali, a da<br>se znace
 <p align="justify" style="margin:0pt;"><span class="Sense"><span class="Definicija"><span class="Definicija__definicija"> dopusni??? mjesni?</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> -  I ma kamo dođeš, posvuda je moguće prepoznati ljudskost.</span></p>
 <p align="justify" style="margin:0pt;"><span class="Normativna_nap">• <span class="Normativna_nap__napomena">Prilogom <i>gdje</i> pita se o mjestu na kojemu se tko ili što nalazi, prilogom <i>kamo</i> pita se za cilj čijega kretanja, a prilogom <i>kuda</i> pita se za njegov smjer. U uporabi tih priloga često se griješi tako da se prilogom <i>gdje</i> pita o cilju čijega kretanja, npr. <i>Gdje ideš?</i> umjesto pravilnoga pitanja <i>Kamo ideš?</i>, a prilogom <i>kuda</i> o cilju čijega kretanja, npr. <i>Kuda ideš večeras?</i> umjesto pravilnoga pitanja <i>Kamo ideš večeras?</i> Prilog <i>gdje</i> ne treba nikad upotrebljavati uz glagole koji označuju kretanje. </span></span></p>
-<span class="Tvorbena_raz"> <span class="Tvorbena_raz__mrtve_tvorenice">mrtve tvorenice: kudikamo</span></span>i uz glagole koji označuju kretanje. </span></span></bdo></p>
+<span class="Tvorbena_raz"> <span class="Tvorbena_raz__mrtve_tvorenice">mrtve tvorenice: kudikamo</span></span>le koji označuju kretanje. </span></span></bdo></p>
 <span class="Tvorbena_raz"> <span class="Tvorbena_raz__mrtve_tvorenice">mrtve tvorenice: kudikamo</span></span></div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">kamoli</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="kamoli" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">kamoli</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"><span class="Definicija"><span class="Definicija__definicija"> suprotna rečenica, gradacijski.</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> -  Ali to je danas zabranjeno i pomisliti, kamoli reći u javnosti.</span></p>
 <span class="Primjer"></span>
@@ -2225,8 +1884,8 @@ zuje i to sto veznike kad i dok mozemo zamijeniti veznikom ali, a da<br>se znace
 <span class="Primjer"></span>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Većina tih " instruktora " dođe na požar i ne miče se od vozila, a ako se maknu na požaru će ti samo zapovijedati, kamoli maknuti prstom. </span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Kamoli i nekmoli Težak-Babić, Barić i dr., Katičić i Raguž navode kao veznike suprotnih rečenica, a kao složene veznike suprotnih rečenica Raguž i Pranjković imaju a komoli, a nekmoli (Pranjković kao veznik gradacijskih rečenica koje su vrsta suprotnih rečenica). Florschütz, Težak-Babić i Brabec-Hraste-Živković imaju a kamoli i a nekmoli kao veznike poredbenih rečenica (BHŽ i samo kamoli, nekmoli). Mislimo da je riječ o veznicima nezavisnosloženih, suprotnih gradacijskih rečenica. Kao veznik suprotnih rečenica navodi ga Katičić.</span></span></p>
-<span class="Tvorbena_raz"> <span class="Tvorbena_raz__tvorba">Tvorba: kamo-li, </span></span>-li, </span></span></div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">kanda</span></span></p><div class='panel'>
+<span class="Tvorbena_raz"> <span class="Tvorbena_raz__tvorba">Tvorba: kamo-li, </span></span></span></div>
+<p align="justify" class="accordion" id="kanda" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">kanda</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"><span class="Definicija"><span class="Definicija__definicija"> usporedbeni</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - O starorimskom moštu govorio je s tolikom vještinom kanda je u kolu saturnalske braće pijan skakao po trgovima Vječnoga grada</span></p>
 <span class="Primjer__Izvor"> slavoljubpenkala.hr</span><span class="Primjer"></span>
@@ -2235,8 +1894,9 @@ zuje i to sto veznike kad i dok mozemo zamijeniti veznikom ali, a da<br>se znace
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Kanda mi se ne zbrajaju sve brojke kako bi trebalo.</span></p>
 <span class="Primjer__Izvor"> index.hr</span>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Pavešić ga donosi u zagradama kad nabraja načinske (poredbene) veznike</span></span></p>
+</p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">kòjī </span><span class="Lemma__LemmaSign">koji</span> <span class="Lemma__vrsta_rijeci">zam.</span><span class="Gramaticki_blok"><span class="Oblici"> (<span class="Oblici__naglaseni">G kòjēg(a), DL kòjēm(u), A kòjī/kòjēg(a), I kòjīm; <i>ž.</i> kòjā, <i>s</i>. kòjē</span>)</span></span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="koji" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">kòjī </span><span class="Lemma__LemmaSign">koji</span> <span class="Lemma__vrsta_rijeci">zam.</span><span class="Gramaticki_blok"><span class="Oblici"> (<span class="Oblici__naglaseni">G kòjēg(a), DL kòjēm(u), A kòjī/kòjēg(a), I kòjīm; <i>ž.</i> kòjā, <i>s</i>. kòjē</span>)</span></span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Sense__ograda">(upitna zamjenica )</span><span class="Definicija"><span class="Definicija__definicija"> Koji uvodi pitanje o nepoznatome u skupini od dvaju ili više članova.</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Koji su razlozi da o tom šutite?</span></p>
 <span class="Primjer"></span>
@@ -2285,7 +1945,7 @@ zuje i to sto veznike kad i dok mozemo zamijeniti veznikom ali, a da<br>se znace
 <p align="justify" style="margin:0pt;"><span class="Normativna_nap">• <span class="Normativna_nap__napomena">Akuzativ zamjenice <i>koji</i> za neživo glasi <i>koji</i>, a za živo <i>kojega</i>. Pogrešno je umjesto akuzativa <i>koji (materijal koji ste dobili) upotrebljavati akuzativ </i>kojega<i> (materijal kojega ste dobili). Taj akuzativ u standardnome jeziku treba upotrebljavati samo ako je riječ o čemu živome (zaposlenik kojega dosad nisam poznavala).</i></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="vanjska_poveznica"> <span class="vanjska_poveznica__izvor">Kolokacijska baza hrvatskoga jezika: </span> <a class="vanjska_poveznica__poveznica" href="http://ihjj.hr/kolokacije/search/?q=koji&amp;search_type=basic" target="_blank">http://ihjj.hr/kolokacije/search/?q=koji&amp;search_type=basic</a></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">kolik</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="kolik" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">kolik</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Definicija"><span class="Definicija__definicija"> subjektne</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Ne zna se kolik je točno porezni dug ni hoće li tvrtka doista otpuštati zaposlenike</span></p>
 <span class="Primjer"></span>
@@ -2296,7 +1956,7 @@ zuje i to sto veznike kad i dok mozemo zamijeniti veznikom ali, a da<br>se znace
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Nije želio reći kolik je višak radnika.</span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">TB: odnosni</span></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">kòliko </span><span class="Lemma__LemmaSign">koliko</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="koliko" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">kòliko </span><span class="Lemma__LemmaSign">koliko</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Definicija"><span class="Definicija__definicija"> Koliko uvodi pitanje o količini.</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> -  Koliko brzo možete pročitati i kritički ocijeniti sedam mjesečnih planova vaših podređenih rukovoditelja?</span></p>
 <span class="Primjer"></span>
@@ -2338,7 +1998,7 @@ zuje i to sto veznike kad i dok mozemo zamijeniti veznikom ali, a da<br>se znace
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Katičić navodi <i>koliko</i> i kao posljedični  str. 268. i kao dopusni veznik str. 303. : vidjeti što s tim </span></span></p>
 <p align="justify" style="margin:0pt;"><span class="vanjska_poveznica"> <span class="vanjska_poveznica__izvor">Kolokacijska baza hrvatskoga jezika: </span> <a class="vanjska_poveznica__poveznica" href="http://ihjj.hr/kolokacije/search/?q=koliko&amp;search_type=basic" target="_blank">http://ihjj.hr/kolokacije/search/?q=koliko&amp;search_type=basic</a></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">kȕd </span><span class="Lemma__LemmaSign">kud</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="kud" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">kȕd </span><span class="Lemma__LemmaSign">kud</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Definicija"><span class="Definicija__definicija"> Kud uvodi pitanje o smjeru kretanja, kojim putom?</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Dobar dan majstore, mi smo muzika, kud se ide do trga?</span></p>
 <p align="justify" style="margin:0pt;"><span class="Poveznice"> <span class="References">SINONIM:  <span class="References">kuda</span> :1</span></span></p>
@@ -2378,7 +2038,7 @@ zuje i to sto veznike kad i dok mozemo zamijeniti veznikom ali, a da<br>se znace
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Katičić ima kud kao suprotni veznik?</span></span></p>
 <p align="justify" style="margin:0pt;"><span class="vanjska_poveznica"> <span class="vanjska_poveznica__izvor">Kolokacijska baza hrvatskoga jezika: </span> <a class="vanjska_poveznica__poveznica" href="http://ihjj.hr/kolokacije/search/?q=kud&amp;search_type=basic" target="_blank">http://ihjj.hr/kolokacije/search/?q=kud&amp;search_type=basic</a></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">kùdā </span><span class="Lemma__LemmaSign">kuda</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="kuda" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">kùdā </span><span class="Lemma__LemmaSign">kuda</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Definicija"><span class="Definicija__definicija"> Kuda uvodi pitanje o smjeru kretanja, kojim putom. </span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Kuda dalje?</span></p>
 <p align="justify" style="margin:0pt;"><span class="Poveznice"> <span class="References">SINONIM:  <span class="References">kud</span> :1</span></span></p>
@@ -2449,10 +2109,10 @@ zuje i to sto veznike kad i dok mozemo zamijeniti veznikom ali, a da<br>se znace
 <p align="justify" style="margin:0pt;"><span class="Normativna_nap">• <span class="Normativna_nap__napomena">Neki vremenski i mjesni prilozi tvoreni dodavanjem prefiksa (prijedloga) prilogu <i>kad</i>, <i>tad</i>, <i>sad</i>, <i>tud</i>, npr. <i>dokad</i>, <i>dokud</i>, <i>dosad</i>, <i>dotad</i>, <i>dotud</i>, <i>otad</i>, <i>otkad</i>, <i>otkud</i>, <i>otud</i>, zasad pišu se nesastavljeno kad se prilog želi posebno istaknuti i naglasiti. U prijedložnome izrazu (prijedlog + prilog) prilog se piše s naveskom, npr. <i>Ne znam ni od kuda je krenuo ni do kuda će putovati.</i></span></span></p>
 <span class="Tvorbena_raz"> <span class="References">tvorenice <span class="References">dokuda</span><span class="referenceseparator">, </span><span class="References">otkuda</span></span> <span class="Tvorbena_raz__mrtve_tvorenice">mrtve tvorenice: gdjekuda, ikuda, kojekuda, nekuda, nikuda, svukuda</span></span>
 <p align="justify" style="margin:0pt;"><span class="vanjska_poveznica"> <span class="vanjska_poveznica__izvor">Kolokacijska baza hrvatskoga jezika: </span> <a class="vanjska_poveznica__poveznica" href="http://ihjj.hr/kolokacije/search/?q=kuda&amp;search_type=basic" target="_blank">http://ihjj.hr/kolokacije/search/?q=kuda&amp;search_type=basic</a></span></p>
-otkuda</span></span> <span class="Tvorbena_raz__mrtve_tvorenice">mrtve tvorenice: gdjekuda, ikuda, kojekuda, nekuda, nikuda, svukuda</span></span>
+an></span> <span class="Tvorbena_raz__mrtve_tvorenice">mrtve tvorenice: gdjekuda, ikuda, kojekuda, nekuda, nikuda, svukuda</span></span>
 <p align="justify" style="margin:0pt;"><span class="vanjska_poveznica"> <span class="vanjska_poveznica__izvor">Kolokacijska baza hrvatskoga jezika: </span> <span class="vanjska_poveznica__poveznica">http://ihjj.hr/kolokacije/search/?q=kuda&amp;search_type=basic</span></span></bdo></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">ma</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="ma" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">ma</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"><span class="Definicija"><span class="Definicija__definicija"> suprotna rečenica</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> -  Jezerani organizirano love po Kornati ma i okolnim otocima.</span></p>
 <span class="Primjer"></span>
@@ -2464,7 +2124,7 @@ otkuda</span></span> <span class="Tvorbena_raz__mrtve_tvorenice">mrtve tvorenice
 <p align="justify" style="margin:0pt;"><span class="Sense"></span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">K 300: dopusni</span></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">màda </span><span class="Lemma__LemmaSign">mada</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="mada" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">màda </span><span class="Lemma__LemmaSign">mada</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__stilska_odrednica">razg.</span><span class="Definicija"><span class="Definicija__definicija"> Mada uvodi stvarnu (uzročno)dopusnu surečenicu u zavisnosloženoj rečenici. </span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> -  Getaldić, mada bolestan, održava živu korespodenciju sa svojim prijateljima i obavještava ih o svojim radovima. </span></p>
 <span class="Primjer"></span>
@@ -2488,7 +2148,7 @@ otkuda</span></span> <span class="Tvorbena_raz__mrtve_tvorenice">mrtve tvorenice
 <p align="justify" style="margin:0pt;"><span class="Normativna_nap">• <span class="Normativna_nap__napomena">Vezik <i>mada</i> ne pripada strožim stilovima standardnoga jezika. Stoga je u publicističkome, administrativnome i znanstvenome stilu bolje umjesto veznika <i>mada</i> upotrebljavati veznike <i>iako</i> ili <i>premda</i>. </span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Normativna_nap">• <span class="Normativna_nap__napomena">Ispred veznika mada ne piše se zarez. </span></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">màkar </span><span class="Lemma__LemmaSign">makar</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="makar" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">màkar </span><span class="Lemma__LemmaSign">makar</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"><span class="Definicija"><span class="Definicija__definicija"> Makar uvodi stvarnu dopusnu surečenicu u zavisnosloženoj rečenici. </span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Raskrižje na ovoj slici spada u ona najjednostavnija, pa ipak vozač koji želi skrenuti desno, mora analizirati čak četiri elementa, a jedan od njih, makar je pravilno postavljen, može ga na tren zbuniti. </span></p>
 <span class="Primjer"></span>
@@ -2510,11 +2170,11 @@ otkuda</span></span> <span class="Tvorbena_raz__mrtve_tvorenice">mrtve tvorenice
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Pranjković</span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Normativna_nap">• <span class="Normativna_nap__napomena"> Veliki uspjeh hrvatskog pravosuđa bit će ako netko završi makar i u istražnom zatvoru ako već ne na izdržavanju kazne. ????</span></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">negder</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="negder" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">negder</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__stilska_odrednica">zast.</span><span class="Definicija"><span class="Definicija__definicija"> Negder uvodi zavisnu surečenicu u mogućoj dopusnoj  rečenici.</span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Katičić; nema potvrda u korpusu za veznik, samo za prilog</span></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">nègo </span><span class="Lemma__LemmaSign">nego</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="nego" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">nègo </span><span class="Lemma__LemmaSign">nego</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"><span class="Definicija"><span class="Definicija__definicija"> suprotna rečenica, surečenice ne mogu zamijeniti mjesta, jedna je jesna, druga niječna</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Ako ne pokazujete svoju zahvalnost, nego je samo očekujete, djeca se nemaju na koga ugledati. </span></p>
 <span class="Primjer"></span>
@@ -2577,11 +2237,8 @@ otkuda</span></span> <span class="Tvorbena_raz__mrtve_tvorenice">mrtve tvorenice
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">U standardnome se jeziku preporučuje uporaba veznika <i>prije nego što</i>.</span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">O riječima nego, no, već, još i tek // Fluminensia, 30 (2018), 1; 63-76</span></span></p>
 <p align="justify" style="margin:0pt;"><span class="vanjska_poveznica"> <span class="vanjska_poveznica__izvor">Hrvatska školska gramatika: </span> <a class="vanjska_poveznica__poveznica" href="http://gramatika.hr/pravilo/suprotne-recenice/86/#pravilo" target="_blank">http://gramatika.hr/pravilo/suprotne-recenice/86/#pravilo</a></span></p>
-
-
-<p align="justify" style="margin:0pt;"><span class="vanjska_poveznica"> <span class="vanjska_poveznica__izvor">Hrvatska školska gramatika: </span> <span class="vanjska_poveznica__poveznica">http://gramatika.hr/pravilo/suprotne-recenice/86/#pravilo</span></span></bdo></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">nègoli </span><span class="Lemma__LemmaSign">negoli</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="negoli" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">nègoli </span><span class="Lemma__LemmaSign">negoli</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"><span class="Definicija"><span class="Definicija__definicija"> usporedbena rečenica, obvezatan komparativ u glavnoj surečenici</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Ispalo je bolje negoli smo se nadali.</span></p>
 <span class="Primjer"></span>
@@ -2609,9 +2266,9 @@ otkuda</span></span> <span class="Tvorbena_raz__mrtve_tvorenice">mrtve tvorenice
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Topljivost plinova u talini metala znatno je veća negoli kad je metal u čvrstome stanju. </span></p>
 <span class="Primjer"></span>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - njegovi su ligamenti još malo otečeni, ali ipak to izgleda bolje negoli kad je stigao.</span></p>
-<span class="Tvorbena_raz"> <span class="Tvorbena_raz__tvorba">Tvorba: nego-li, </span></span>i kad je stigao.</span></bdo></p>
+<span class="Tvorbena_raz"> <span class="Tvorbena_raz__tvorba">Tvorba: nego-li, </span></span>gao.</span></bdo></p>
 <span class="Tvorbena_raz"> <span class="Tvorbena_raz__tvorba">Tvorba: nego-li, </span></span></div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">nèka </span><span class="Lemma__LemmaSign">neka</span> <span class="Lemma__vrsta_rijeci">čest.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="neka" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">nèka </span><span class="Lemma__LemmaSign">neka</span> <span class="Lemma__vrsta_rijeci">čest.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Definicija"><span class="Definicija__definicija"> Neka uvodi imperativ za 3. lice jednine i množine.</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - E sada, neka čeka odgovor svemira.</span></p>
 <span class="Primjer"></span>
@@ -2633,11 +2290,11 @@ otkuda</span></span> <span class="Tvorbena_raz__mrtve_tvorenice">mrtve tvorenice
 <p align="justify" style="margin:0pt;"><span class="Normativna_nap">• <span class="Normativna_nap__napomena">je li moguća subjektna Zapovijeda se neka napuste brod.???</span></span></p>
 <p align="justify" style="margin:0pt;"><span class="vanjska_poveznica"> <span class="vanjska_poveznica__izvor">Kolokacijska baza hrvatskoga jezika: </span> <a class="vanjska_poveznica__poveznica" href="http://ihjj.hr/kolokacije/search/?q=neka&amp;search_type=basic" target="_blank">http://ihjj.hr/kolokacije/search/?q=neka&amp;search_type=basic</a></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">nekader</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="nekader" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">nekader</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__stilska_odrednica">zast.</span><span class="Definicija"><span class="Definicija__definicija"> Nekader uvodi zavisnu surečenicu u mogućoj dopusnoj  rečenici.</span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Katičić</span></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">nekamoli</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="nekamoli" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">nekamoli</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"><span class="Definicija"><span class="Definicija__definicija"> suprotni, gradacijski</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Čak i kada znaš da ćeš moći ponoviti izbor, javlja se minimalna količina napetosti, a nekamoli kada znaš da pravo na izbor imaš samo jednom i to je to.</span></p>
 <span class="Primjer__Izvor"> forum.hr</span><span class="Primjer"></span>
@@ -2650,7 +2307,7 @@ otkuda</span></span> <span class="Tvorbena_raz__mrtve_tvorenice">mrtve tvorenice
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Navodi ga Raguž: Nije ni on mogao, nekamoli ti. — Nije ucinio ni za sebe, (a) nekmoli/nekamo li ce za nas. U hrWaC-u potvrđeno uglavnom na forum.hr.Vidi i nekmoli.</span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Poveznice"> <span class="References">SINONIM:  <span class="References">nekmoli</span> :1</span></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">nekmoli</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="nekmoli" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">nekmoli</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Definicija"><span class="Definicija__definicija"> suprotni, gradacijski</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - HND stoga upozorava da pravo ureðivanja programa ne bi smio imati ni ravnatelj HRT-a a nekmoli zastupnici u Saboru, kojima je baviti se zakonitošæu svekolikoga javnoga rada pa tako i medijskoga. </span></p>
 <span class="Primjer"></span>
@@ -2661,7 +2318,7 @@ otkuda</span></span> <span class="Tvorbena_raz__mrtve_tvorenice">mrtve tvorenice
 <p align="justify" style="margin:0pt;"><span class="Poveznice"> <span class="References">SINONIM:  <span class="References">nekamoli</span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">2</span> <span class="Definicija"></span></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">nȉ </span><span class="Lemma__LemmaSign">ni</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="ni" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">nȉ </span><span class="Lemma__LemmaSign">ni</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"><span class="Definicija"><span class="Definicija__definicija"> Ni povezuje surečenice u nezavisnosloženoj sastavnoj rečenici.</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Nemoj mi se javljati ni nazivati me!</span></p>
 <p align="justify" style="margin:0pt;"><span class="Subentry"><span class="Subentry__LemmaSign"> ni… ni</span></span></p>
@@ -2673,7 +2330,7 @@ otkuda</span></span> <span class="Tvorbena_raz__mrtve_tvorenice">mrtve tvorenice
 <p align="justify" style="margin:0pt;"><span class="Sense"><span class="Definicija"><span class="Definicija__definicija"> sastavni</span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">BHŽ</span></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">nìti </span><span class="Lemma__LemmaSign">niti</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="niti" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">nìti </span><span class="Lemma__LemmaSign">niti</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"><span class="Definicija"><span class="Definicija__definicija"> Niti povezuje surečenice u nezavisnosloženoj sastavnoj rečenici.</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Moji prijatelji nisu došli niti su me nazvali.</span></p>
 <p align="justify" style="margin:0pt;"><span class="Subentry"><span class="Subentry__LemmaSign"> niti… niti</span></span></p>
@@ -2682,7 +2339,7 @@ otkuda</span></span> <span class="Tvorbena_raz__mrtve_tvorenice">mrtve tvorenice
 <span class="Primjer"></span>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Niti su me pozvali niti me pitali   </span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">nȍ </span><span class="Lemma__LemmaSign">no</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="no" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">nȍ </span><span class="Lemma__LemmaSign">no</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"><span class="Definicija"><span class="Definicija__definicija"> No povezuje surečenice u suprotnoj rečenici kojom se izriče izrazita suprotnost: iznevjereno očekivanje ili neostvarena posljedica.</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Premda je bio zaljubljen u Rachel još od srednje škole, Ross je odlučio konačno okrenuti novu stranicu u životu, no baš tada Rachel spopadnu osjećaji prema njemu.</span></p>
 <span class="Primjer"></span>
@@ -2695,7 +2352,7 @@ otkuda</span></span> <span class="Tvorbena_raz__mrtve_tvorenice">mrtve tvorenice
 <p align="justify" style="margin:0pt;"><span class="Poveznice"> <span class="References">SINONIMI:  <span class="References">ali</span><span class="referenceseparator">, </span><span class="References">dok</span> :1<span class="referenceseparator">, </span><span class="References">dočim</span> :1</span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">O riječima nego, no, već, još i tek // Fluminensia, 30 (2018), 1; 63-76</span></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">òdāklē </span><span class="Lemma__LemmaSign">odakle</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="odakle" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">òdāklē </span><span class="Lemma__LemmaSign">odakle</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Definicija"><span class="Definicija__definicija"> Odakle uvodi pitanje o mjestu od kojega je započelo kretanje.</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> -  Odakle tebi podatak o svakom 4. glasaču?</span></p>
 <span class="Primjer"></span>
@@ -2755,7 +2412,7 @@ otkuda</span></span> <span class="Tvorbena_raz__mrtve_tvorenice">mrtve tvorenice
 <p align="justify" style="margin:0pt;"><span class="Poveznice"> <span class="References">SINONIMI:  <span class="References">otkud</span> otkud god<span class="referenceseparator">, </span><span class="References">otkuda</span> otkuda god</span><span class="poveznica"> <span class="poveznica__poveznica">otkamo god</span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="vanjska_poveznica"> <span class="vanjska_poveznica__izvor">Kolokacijska baza hrvatskoga jezika: </span> <a class="vanjska_poveznica__poveznica" href="http://ihjj.hr/kolokacije/search/?q=odakle&amp;search_type=basic" target="_blank">http://ihjj.hr/kolokacije/search/?q=odakle&amp;search_type=basic</a></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">òdnosno </span><span class="Lemma__LemmaSign">odnosno</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="odnosno" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">òdnosno </span><span class="Lemma__LemmaSign">odnosno</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Definicija"><span class="Definicija__definicija"> Odnosno uvodi dodatno pojašnjenje.</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Predstavnika određuje organ pravne osobe, odnosno osobe koje je zastupaju na temelju zakona, odluke nadležnog organa, statuta, društvenog ugovora ili odluke organa pravne osobe. </span></p>
 <span class="Primjer"></span>
@@ -2779,15 +2436,15 @@ otkuda</span></span> <span class="Tvorbena_raz__mrtve_tvorenice">mrtve tvorenice
 <p align="justify" style="margin:0pt;"><span class="Poveznice"> <span class="References">SINONIM:  <span class="References">ili</span> :2</span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Normativna_nap">• <span class="Normativna_nap__napomena">Ispred priloga <i>odnosno</i> kad je zamjenjiv s <i>to jest</i> ili <i>tj.</i> i koji uvodi dotano objašnjenje piše se zarez. Zarez se ne piše kad <i>odnosno</i> ima vezničku funkciju, odnosno kad je zamjenjiv rastavnim veznikom <i>ili</i>.</span></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">opet</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="opet" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">opet</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"><span class="Definicija"><span class="Definicija__definicija"> suprotni</span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Pavešić, Katičić; vidi je li to veznik ili reč prilog</span></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">osim</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="osim" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">osim</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"><span class="Definicija"><span class="Definicija__definicija"> isključni</span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Pavešić: provjeriti je li tako</span></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">òtkad </span><span class="Lemma__LemmaSign">otkad</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="otkad" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">òtkad </span><span class="Lemma__LemmaSign">otkad</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Definicija"><span class="Definicija__definicija"> Otkad uvodi pitanje o vremenu od kojega je što započelo.</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> -  Otkad je to čovjek ljuštura? </span></p>
 <span class="Primjer"></span>
@@ -2813,9 +2470,9 @@ otkuda</span></span> <span class="Tvorbena_raz__mrtve_tvorenice">mrtve tvorenice
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Pranjković: terminativne (granične) vremenske rečenice</span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Poveznice"> <span class="References">SINONIMI:  <span class="References">otkada</span> :5<span class="referenceseparator">, </span><span class="References">otkako</span> :2<span class="referenceseparator">, </span><span class="References">kada</span> od kada :5</span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Normativna_nap">• <span class="Normativna_nap__napomena">Neki vremenski i mjesni prilozi tvoreni dodavanjem prefiksa (prijedloga) prilogu <i>kad</i>, <i>tad</i>, <i>sad</i>, <i>tud</i>, npr. <i>dokad</i>, <i>dokud</i>, <i>dosad</i>, <i>dotad</i>, <i>dotud</i>, <i>otad</i>, <i>otkad</i>, <i>otkud</i>, <i>otud</i>, <i>zasad</i> pišu se nesastavljeno kad se prilog želi posebno istaknuti i naglasiti. U prijedložnome izrazu (prijedlog + prilog) prilog se piše s naveskom, npr. <i>Od kada se to dogodilo, sve se promijenilo.</i></span></span></p>
-<span class="Tvorbena_raz"> <span class="Tvorbena_raz__tvorba">Tvorba: od-kad, </span></span>ilo, sve se promijenilo.</i></span></span></bdo></p>
+<span class="Tvorbena_raz"> <span class="Tvorbena_raz__tvorba">Tvorba: od-kad, </span></span> promijenilo.</i></span></span></bdo></p>
 <span class="Tvorbena_raz"> <span class="Tvorbena_raz__tvorba">Tvorba: od-kad, </span></span></div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">otkàda </span><span class="Lemma__LemmaSign">otkada</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="otkada" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">otkàda </span><span class="Lemma__LemmaSign">otkada</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Definicija"><span class="Definicija__definicija"> Otkada uvodi pitanje o vremenu od kojega je što započelo.</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> -  Otkada je tako lako prevariti? </span></p>
 <span class="Primjer"></span>
@@ -2842,9 +2499,9 @@ otkuda</span></span> <span class="Tvorbena_raz__mrtve_tvorenice">mrtve tvorenice
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Odigrali smo najbolju utakmicu otkada sam trener Hajduka. </span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Pranjković: terminativne (granične) vremenske rečenice</span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Poveznice"> <span class="References">SINONIMI:  <span class="References">otkad</span> :5<span class="referenceseparator">, </span><span class="References">otkako</span> :2<span class="referenceseparator">, </span><span class="References">kada</span> do kada :5</span></span></p>
-<span class="Tvorbena_raz"> <span class="Tvorbena_raz__tvorba">Tvorba: od-kada, </span></span>s">kada</span> do kada :5</span></span></bdo></p>
+<span class="Tvorbena_raz"> <span class="Tvorbena_raz__tvorba">Tvorba: od-kada, </span></span>n> do kada :5</span></span></bdo></p>
 <span class="Tvorbena_raz"> <span class="Tvorbena_raz__tvorba">Tvorba: od-kada, </span></span></div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">òtkako </span><span class="Lemma__LemmaSign">otkako</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="otkako" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">òtkako </span><span class="Lemma__LemmaSign">otkako</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Sense__ograda">(u vezničkoj finkciji)</span><span class="Definicija"><span class="Definicija__definicija"> Otkako uvodi zavisnu surečenicu, neizravno pitanje, u objektnoj rečenici.</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Chrisa znam otkako se počeo baviti ovim poslom. </span></p>
 <p align="justify" style="margin:0pt;"><span class="Poveznice"> <span class="References">SINONIMI:  <span class="References">otkada</span> :2<span class="referenceseparator">, </span><span class="References">otkad</span> :2<span class="referenceseparator">, </span><span class="References">kada</span> od kada :2</span></span></p>
@@ -2854,8 +2511,8 @@ otkuda</span></span> <span class="Tvorbena_raz__mrtve_tvorenice">mrtve tvorenice
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> -  Otkako joj je prije dvadeset godina nestala kolegica iz razreda, Sandy Shortt bila je opsjednuta nestalim stvarima. </span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Pranjković: terminativne (granične) vremenske rečenice</span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Poveznice"> <span class="References">SINONIMI:  <span class="References">otkad</span> :5<span class="referenceseparator">, </span><span class="References">otkada</span> :5<span class="referenceseparator">, </span><span class="References">kada</span> od kada :5</span></span></p>
-<span class="Tvorbena_raz"> <span class="Tvorbena_raz__tvorba">Tvorba: od-kako, </span></span>na_raz__tvorba">Tvorba: od-kako, </span></span></div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">òtkud </span><span class="Lemma__LemmaSign">otkud</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
+<span class="Tvorbena_raz"> <span class="Tvorbena_raz__tvorba">Tvorba: od-kako, </span></span>ba">Tvorba: od-kako, </span></span></div>
+<p align="justify" class="accordion" id="otkud" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">òtkud </span><span class="Lemma__LemmaSign">otkud</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Definicija"><span class="Definicija__definicija"> Otkud uvodi pitanje o mjestu od kojega je započelo kretanje </span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Treba im doći i reći: Gospodine, što trebate? Otkud dolazite?</span></p>
 <p align="justify" style="margin:0pt 0pt 0pt 10pt;"><span class="kolokacije"></span></p>
@@ -2905,7 +2562,7 @@ otkuda</span></span> <span class="Tvorbena_raz__mrtve_tvorenice">mrtve tvorenice
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Katičić ima otkud kao suprotni veznik</span></span></p>
 <p align="justify" style="margin:0pt;"><span class="vanjska_poveznica"> <span class="vanjska_poveznica__izvor">Kolokacijska baza hrvatskoga jezika: </span> <a class="vanjska_poveznica__poveznica" href="http://ihjj.hr/kolokacije/search/?q=otkud&amp;search_type=basic" target="_blank">http://ihjj.hr/kolokacije/search/?q=otkud&amp;search_type=basic</a></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">otkùdā </span><span class="Lemma__LemmaSign">otkuda</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="otkuda" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">otkùdā </span><span class="Lemma__LemmaSign">otkuda</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Definicija"><span class="Definicija__definicija"> Otkuda uvodi pitanje o mjestu od kojega je započelo kretanje </span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Otkuda ste krenuli?</span></p>
 <p align="justify" style="margin:0pt 0pt 0pt 10pt;"><span class="kolokacije"></span></p>
@@ -2950,9 +2607,9 @@ otkuda</span></span> <span class="Tvorbena_raz__mrtve_tvorenice">mrtve tvorenice
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Močvara je unutar Zagreba vjerojatno najbliže pojmu i idealu alternativne kulture otvorenoj svima, ma otkuda dolazili i kojoj god vjeri, rasi ili naciji pripadali.</span></p>
 <span class="Primjer"></span>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - S obzirom na tu činjenicu moramo i gledati njegov utjecaj na Ungnada, s kojim je odavno prijateljevao Klombner se toliko zauzeo za hrvatsku tiskaru da je nastojao ma otkuda pribaviti ljude za rad u njoj. </span></p>
-<span class="Tvorbena_raz"> <span class="Tvorbena_raz__tvorba">Tvorba: od-kuda, </span></span> na tu činjenicu moramo i gledati njegov utjecaj na Ungnada, s kojim je odavno prijateljevao Klombner se toliko zauzeo za hrvatsku tiskaru da je nastojao ma otkuda pribaviti ljude za rad u njoj. </span></bdo></p>
+<span class="Tvorbena_raz"> <span class="Tvorbena_raz__tvorba">Tvorba: od-kuda, </span></span>enicu moramo i gledati njegov utjecaj na Ungnada, s kojim je odavno prijateljevao Klombner se toliko zauzeo za hrvatsku tiskaru da je nastojao ma otkuda pribaviti ljude za rad u njoj. </span></bdo></p>
 <span class="Tvorbena_raz"> <span class="Tvorbena_raz__tvorba">Tvorba: od-kuda, </span></span></div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">pȁ </span><span class="Lemma__LemmaSign">pa</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="pa" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">pȁ </span><span class="Lemma__LemmaSign">pa</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Definicija"><span class="Definicija__definicija"> U sastavnoj rečenici <i>pa</i> povezuje surečenice čije su radnje u odnosu prijevremenost - poslijevremenost.</span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Poveznice"> <span class="References">SINONIMI:  <span class="References">i</span> :5<span class="referenceseparator">, </span><span class="References">te</span> :3</span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">2</span> <span class="Definicija"><span class="Definicija__definicija"> U sastavnoj rečenici <i>pa</i> povezuje surečenice čije su radnje u uzročno-posljedičnome odnosu.</span></span></span></p>
@@ -3001,7 +2658,7 @@ otkuda</span></span> <span class="Tvorbena_raz__mrtve_tvorenice">mrtve tvorenice
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">pa baš zbog toga, pa upravo zbog toga, pa već zbog toga</span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Veznik pa kao veznik posljedičnih rečenica spominje Pavešić. Kao veznike posljedičnih rečenica navodi <i>da</i>, <i>te</i> i <i>(pa)</i> (upravo tako, u zagradama; ne objašnjava ni zašto je <i>pa</i> u zagradama ni ne oprimjeruje njegovu uporabu u posljedičnim rečenicama. Katičić pa navodi (i) kao zaključni veznik: <i>Jedanput se živi, pa neka to bude pošteno.</i></span></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">pak</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="pak" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">pak</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Definicija"><span class="Definicija__definicija"> sastavni</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Skuhaš je, pak je baciš na vrelo ulje, a gore samo malo bijelog luka i peršina, a?</span></p>
 <span class="Primjer__Izvor"> Ivan Dončević, Mirotvorci</span><span class="Primjer"></span>
@@ -3012,13 +2669,13 @@ otkuda</span></span> <span class="Tvorbena_raz__mrtve_tvorenice">mrtve tvorenice
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">2</span> <span class="Definicija"><span class="Definicija__definicija"> suprotni</span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Pavešić, BHŽ</span></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">pokle</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="pokle" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">pokle</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__stilska_odrednica">zast.</span><span class="Definicija"><span class="Definicija__definicija"> vremenski</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Eto na priliku razlikosti izmedju oba narječja jezika hrvatskoga: čakavštine i štokavštine, nijesu nam više toli čudne, pokle je A. Mažuranić objasnio njihov međusobni odnošaj i u akcentuaciji [...].</span></p>
 <span class="Primjer__Izvor"> Milan Moguš, Antum Mažuranić, 1997.</span>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Katičić</span></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">pȍšto </span><span class="Lemma__LemmaSign">pošto</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="pošto" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">pȍšto </span><span class="Lemma__LemmaSign">pošto</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Definicija"><span class="Definicija__definicija"> Pošto uvodi vremensku surečenicu u zavisnosloženoj rečenici, izriče da se radnja zavisne surečenice zbiva neposredno prije radnje glavne surečenice. </span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - I pohite te pronađu Mariju, Josipa i novorođenče gdje leži u jaslama. Pošto sve pogledaše, ispripovjediše što im bijaše rečeno o tom djetetu</span></p>
 <span class="Primjer"></span>
@@ -3038,7 +2695,7 @@ otkuda</span></span> <span class="Tvorbena_raz__mrtve_tvorenice">mrtve tvorenice
 <p align="justify" style="margin:0pt;"><span class="Normativna_nap">• <span class="Normativna_nap__napomena">Veznik <i>pošto</i> pogrešno je u hrvatskome standardnom jeziku upotrebljavati u uzročnome značenju. <i>Pošto</i> je u njemu vezno sredstvo u vremenskim rečenicama i označuje da se radnja zavisne surečenice zbiva prije radnje glavne rečenice: <i>Pošto je položila sve ispite, otišla je na ljetovanje.</i> U uzročnome značenju umjesto veznika <i>pošto</i> pravilno je upotrebljavati druga uzročna vezna sredstva (<i>budući da</i>, <i>jer</i>, <i>stoga što</i>, <i>zato što</i>, <i>zbog toga što</i> itd.). Umjesto <i>Nije otvorio vrata pošto nije čuo zvono.</i>, <i>Pošto je bio jako zauzet, nije stigao kupiti mlijeko.</i> pravilno je <i>Nije otvorio vrata jer nije čuo zvono.</i>, <i>Budući da je bio jako zauzet, nije stigao kupiti mlijeko.</i></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="vanjska_poveznica"> <span class="vanjska_poveznica__izvor">Kolokacijska baza hrvatskoga jezika: </span> <a class="vanjska_poveznica__poveznica" href="http://ihjj.hr/kolokacije/search/?q=po%C5%A1to&amp;search_type=basic" target="_blank">http://ihjj.hr/kolokacije/search/?q=po%C5%A1to&amp;search_type=basic</a></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">prem ako</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="prem ako" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">prem ako</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__stilska_odrednica">zast.</span><span class="Definicija"><span class="Definicija__definicija"> dopusna rečenica</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Ti imadeš i pametnih ljudi, ali neće da se nitko trudi, niti hoće da na svitlost dade, prem ako ju načiniti znade, neg vilaet neka stoji tamo, dosta mu je što on znade samo.</span></p>
 <span class="Primjer__Izvor"> Slavoljub Penkala</span><span class="Primjer"></span>
@@ -3046,7 +2703,7 @@ otkuda</span></span> <span class="Tvorbena_raz__mrtve_tvorenice">mrtve tvorenice
 <span class="Primjer__Izvor"> Slavoljub Penkala</span>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba"> Potvrđeno u Katičić, kao <i>akoprem</i> i <i>ako prem</i>, također i <i>prem ako</i>: <i>Ozgor prvo godina je prva, / prem ako je i narastao mrva</i> (J. S. Reljkovic, Kuc. 143) - <i>Da je Bog moguć, a mogućstvo ljudsko, prem ako najviše, nista prama njemu nije</i> (E. Pavic, Ogledalo 100) - <i>Medju to poče se uzmložavati nenavidnost u Kainu protiva bratu Abelu, prem ako nikakva zla u njemu ne vidi</i> (E. Pavic, Ogledalo 12), <i>Prem ako ga krivcem činjase, ne rasrdi se na proroka</i> (E. Pavic, Ogledala 269), <i>Evo tebi ogledalo! /prem ako je vrlo malo</i> (Dosen 257), <i>Sastavi s pomocu božjom ovo, prem ako i maleno, dilo</i> (B. Pavlovic, Pripr. 4).</span></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">prȅmda </span><span class="Lemma__LemmaSign">premda</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="premda" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">prȅmda </span><span class="Lemma__LemmaSign">premda</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"><span class="Definicija"><span class="Definicija__definicija"> Premda uvodi stvarnu (uzročno)dopusnu surečenicu u zavisnosloženoj rečenici. </span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Poveznice"> <span class="References">SINONIMI:  <span class="References">ako</span> ako… i :1<span class="referenceseparator">, </span><span class="References">iako</span><span class="referenceseparator">, </span><span class="References">mada</span><span class="referenceseparator">, </span><span class="References">makar</span><span class="referenceseparator">, </span><span class="Lemma__HomonymNumber">2</span><span class="References">što</span> usprkos tomu što : unatoč tomu što</span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Subentry"><span class="Subentry__LemmaSign"> premda (i)… ipak</span></span></p>
@@ -3057,11 +2714,11 @@ otkuda</span></span> <span class="Tvorbena_raz__mrtve_tvorenice">mrtve tvorenice
 <span class="Tvorbena_raz"> <span class="Tvorbena_raz__tvorba">Tvorba: prem-da, </span></span>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Katičić: zast: prem da; Pranjković: uzročnodopusne;potvrđeno je i prem da: Hrana je bila očajna, postupak loš, jer su s njime postupali strože i gorje nego sa kriminalnim tipovima, prem da mu je prigodom suđenja porota dosudila neke olakšice, kao političkom krivcu. (pod da?)</span></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">s obzirom na to</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="s obzirom na to" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">s obzirom na to</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"><span class="Definicija"><span class="Definicija__definicija"> isključne</span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Katičić</span></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">sȁmo </span><span class="Lemma__LemmaSign">samo</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="samo" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">sȁmo </span><span class="Lemma__LemmaSign">samo</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Definicija"><span class="Definicija__definicija"> Samo naglašuje malu količinu čega.</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Imam samo minutu vremena.</span></p>
 <span class="Primjer"></span>
@@ -3092,7 +2749,7 @@ otkuda</span></span> <span class="Tvorbena_raz__mrtve_tvorenice">mrtve tvorenice
 <p align="justify" style="margin:0pt;"><span class="Poveznice"> <span class="References">tvorenice <span class="References">jedino</span> :2<span class="referenceseparator">, </span><span class="References">tek</span> :6</span></span></p>
 <p align="justify" style="margin:0pt;"><span class="vanjska_poveznica"> <span class="vanjska_poveznica__izvor">Kolokacijska baza hrvatskoga jezika: </span> <a class="vanjska_poveznica__poveznica" href="http://ihjj.hr/kolokacije/search/?q=samo&amp;search_type=basic" target="_blank">http://ihjj.hr/kolokacije/search/?q=samo&amp;search_type=basic</a></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">slȕčāj </span><span class="Lemma__LemmaSign">slučaj</span> <span class="Lemma__vrsta_rijeci">im. m.</span><span class="Gramaticki_blok"><span class="Oblici"> (<span class="Oblici__naglaseni">G slȕčāja, D slȕčāju, A slȕčāj, L slučáju, I slȕčājem; <i>mn. </i>N slȕčāji/slȕčajevi, G slȕčājā/slȕčajēvā, DLI slȕčājima/slȕčajevima, A slȕčāje/slȕčajeve</span>)</span></span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="slučaj" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">slȕčāj </span><span class="Lemma__LemmaSign">slučaj</span> <span class="Lemma__vrsta_rijeci">im. m.</span><span class="Gramaticki_blok"><span class="Oblici"> (<span class="Oblici__naglaseni">G slȕčāja, D slȕčāju, A slȕčāj, L slučáju, I slȕčājem; <i>mn. </i>N slȕčāji/slȕčajevi, G slȕčājā/slȕčajēvā, DLI slȕčājima/slȕčajevima, A slȕčāje/slȕčajeve</span>)</span></span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"><span class="Definicija"><span class="Definicija__definicija"> Slučaj je događaj ili stjecaj okolnosti koji nije predviđen ili planiran.</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Nakon smrtnog slučaja potrebno je ishoditi dva važna, bitno različita dokumenta za koje je nadležan Matični ured.</span></p>
 <span class="Primjer"></span>
@@ -3118,7 +2775,7 @@ otkuda</span></span> <span class="Tvorbena_raz__mrtve_tvorenice">mrtve tvorenice
 <span class="Tvorbena_raz"> <span class="References"></span> <span class="Tvorbena_raz__tvorba">Tvorba: sluč-aj, </span></span>
 <p align="justify" style="margin:0pt;"><span class="vanjska_poveznica"> <span class="vanjska_poveznica__izvor">Kolokacijska baza hrvatskoga jezika: </span> <a class="vanjska_poveznica__poveznica" href="http://ihjj.hr/kolokacije/search/?q=slu%C4%8Daj&amp;search_type=basic" target="_blank">http://ihjj.hr/kolokacije/search/?q=slu%C4%8Daj&amp;search_type=basic</a></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">štȍ </span><span class="Lemma__HomonymNumber">1</span><span class="Lemma__LemmaSign">što</span> <span class="Lemma__vrsta_rijeci">zam.</span><span class="Gramaticki_blok"><span class="Oblici"> (<span class="Oblici__naglaseni">G čèga, DL čèmu, A štȍ, I čȋm/číme</span>)</span></span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="što" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">štȍ </span><span class="Lemma__HomonymNumber">1</span><span class="Lemma__LemmaSign">što</span> <span class="Lemma__vrsta_rijeci">zam.</span><span class="Gramaticki_blok"><span class="Oblici"> (<span class="Oblici__naglaseni">G čèga, DL čèmu, A štȍ, I čȋm/číme</span>)</span></span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Sense__ograda">(upitna zamjenica)</span><span class="Definicija"><span class="Definicija__definicija"> Što uvodi pitanje za nepoznato.</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Što je studentski zbor?</span></p>
 <span class="Primjer"></span>
@@ -3156,7 +2813,7 @@ otkuda</span></span> <span class="Tvorbena_raz__mrtve_tvorenice">mrtve tvorenice
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Što god je popila ili pojela, povratila bi.</span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Pranjković, Ivo. Zamjenica, prilog, čestica i veznik "što" // Riječki filološki dani 8 / Badurina, Lada ; Bačić-Karković, Danijela (ur.). Rijeka: Filozofski fakultet u Rijeci, 2008.</span></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">štȍ </span><span class="Lemma__HomonymNumber">2</span><span class="Lemma__LemmaSign">što</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="što" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">štȍ </span><span class="Lemma__HomonymNumber">2</span><span class="Lemma__LemmaSign">što</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Definicija"><span class="Definicija__definicija"> Što uvodi atributnu surečenicu u zavisnoloženoj rečenici.</span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Veznik što u njima je uvijek zamjenjiv s veznikom koji i stoji uz nenaglašeni oblik ličnih zamjenica (Pranjković): Pjesma što si je se sjetio još se uvijek pjeva. Pitanje što ste ga postavili nije jasno. Na drugome mejstu Pranjković kaže da su atributner i rečenice tipa Ima već deset godina da/što se nismo vidjeli, ali u nujima veznik  što nije zamjenjiv veznikom koji.</span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">2</span> <span class="Definicija"><span class="Definicija__definicija"> Što uvodi uzročnu surečenicu u zavisnosloženoj rečenici.</span></span></span></p>
@@ -3349,7 +3006,7 @@ otkuda</span></span> <span class="Tvorbena_raz__mrtve_tvorenice">mrtve tvorenice
 <p align="justify" style="margin:0pt;"><span class="Subentry"><span class="Subentry__LemmaSign"> zbog toga što</span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Sense"><span class="Definicija"><span class="Definicija__definicija">  Zbog toga što uvodi uzročnu surečenicu u zavisnoloženoj rečenici.</span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Poveznice"> <span class="References">SINONIMI:  <span class="References">da</span> budući da<span class="referenceseparator">, </span><span class="References">jer</span><span class="referenceseparator">, </span><span class="Lemma__HomonymNumber">2</span><span class="References">što</span> zato što : stoga što</span></span></p>
-rences">jer</span><span class="referenceseparator">, </span><span class="Lemma__HomonymNumber">2</span><span class="References">što</span> zbog toga što : stoga što</span></span></bdo></p>
+r</span><span class="referenceseparator">, </span><span class="Lemma__HomonymNumber">2</span><span class="References">što</span> zbog toga što : stoga što</span></span></bdo></p>
 
 <p align="justify" style="margin:0pt;"><span class="Subentry"><span class="Subentry__LemmaSign"> zbog čega</span></span></bdo></p>
 
@@ -3361,16 +3018,16 @@ rences">jer</span><span class="referenceseparator">, </span><span class="Lemma__
 
 <p align="justify" style="margin:0pt;"><span class="Poveznice"> <span class="References">SINONIMI:  <span class="References">da</span> budući da<span class="referenceseparator">, </span><span class="References">jer</span><span class="referenceseparator">, </span><span class="Lemma__HomonymNumber">2</span><span class="References">što</span> zato što : stoga što</span></span></bdo></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">stȍga </span><span class="Lemma__LemmaSign">stoga</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="stoga" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">stȍga </span><span class="Lemma__LemmaSign">stoga</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"><span class="Definicija"><span class="Definicija__definicija"> Stoga ima vezničku funkciju u nezavisnosloženoj zaključnoj rečenici.</span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">U gramatikama Silić-Pranjković i Hudeček-Mihaljević problematizira se status zaključnih rečenica kao nezavisnosloženih rečenica, a veznici koji se uobičajeno navode kao veznici zaključnih rečenica (dakle, stoga, zato) smatraju se rečeničnim konektorima. Ostali veznici koji se uobičajeno navode kao veznici zaključnih rečenica (stoga što, zato što) veznici su zavisnosloženih (uzročnih) rečenica.</span></span></p>
 <p align="justify" style="margin:0pt;"><span class="vanjska_poveznica"> <span class="vanjska_poveznica__izvor">Kolokacijska baza hrvatskoga jezika: </span> <a class="vanjska_poveznica__poveznica" href="http://ihjj.hr/kolokacije/search/?q=stoga&amp;search_type=basic" target="_blank">http://ihjj.hr/kolokacije/search/?q=stoga&amp;search_type=basic</a></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">ta</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="ta" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">ta</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"><span class="Definicija"><span class="Definicija__definicija"> objasnidbeni</span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Katičić: Sad ću i ja malo živjeti, ta dosta sam se namučio.</span></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">te</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="te" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">te</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Definicija"><span class="Definicija__definicija"> Te povezuje dvije iste riječi naglašavajući njihovo značenje.</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - On priča te priča, nikad kraja…</span></p>
 <p align="justify" style="margin:0pt;"><span class="Poveznice"> <span class="References">SINONIMI:  <span class="References">i</span> :2<span class="referenceseparator">, </span><span class="References">pa</span> :4</span></span></p>
@@ -3401,7 +3058,7 @@ rences">jer</span><span class="referenceseparator">, </span><span class="Lemma__
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Sve to uljepšava za umjetničke slike i crteže prilagođeni papir, tako te leksikon djeluje kao primjerno djelo te vrste u našoj izdavačakoj djelatnosti. </span></p>
 <span class="Primjer"></span>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Abšalom je jahao na mazgi, a mazga naiđe pod grane velika hrasta, tako te je Abšalomu glava zapela o grane, i on osta viseći između neba i zemlje, dok je mazga ispod njega otišla dalje. </span></p>
-<p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Veznik <i>tako te</i> upotrebljava se razmjerno rijetko, obično u religijskome kontekstu ili u starijim tekstovima. Stilski je neutralniji posljedični veznik <i>tako da</i>. Maretić (1963: 548 i 534) navodi veznik te i kao veznik sastavnih i kao veznik posljedičnih rečenica.  U Katičićevoj Sintaksi (1986.), a isto je i u Hrvatskoj gramatici (2003.), veznik te funkcionira dvostruko: i kao veznik sastavnih i kao veznik posljedičnih rečenica.  Svi primjeri za posljedične rečenice s veznikom te korelativnog su tipa.  Po tome bi se dalo zaključiti da je uspostavljen jasan kriterij razgraničenja koordinatora od subordinatora te: taj je veznik subordinator samo u rečenicama korelativnoga tipa. Vukojević (knjiga) navodi:  Rečenice tog tipa iznimno su rijetke: Slijedećih dana okomili su se aneksionisti na zanelijance tako te je četiri tisuće građana moralo uteći zauvijek iz grada.  Fabrio BK 306; ... i mrkli oblak srdžbe preletio mu u očima.  Doduše, oblak je on odmah uklonio tako te nije ni došlo do bljeska munje u očima, ali pjege su se širile na licu i prekrile ga sve do ušiju.  Marinković K 46; One su zaista pritisle starca tako te se više nije usuđivao pomaći i ni riječi reći.  Šegedin 211 10. 3.  </span></span></p>
+<p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Veznik <i>tako te</i> upotrebljava se razmjerno rijetko, obično u religijskome kontekstu ili u starijim tekstovima. Stilski je neutralniji posljedični veznik <i>tako da</i>. Maretić (1963: 548 i 534) navodi veznik te i kao veznik sastavnih i kao veznik posljedičnih rečenica.  U Katičićevoj Sintaksi (1986.), a isto je i u Hrvatskoj gramatici (2003.), veznik te funkcionira dvostruko: i kao veznik sastavnih i kao veznik posljedičnih rečenica. </s><s> Svi primjeri za posljedične rečenice s veznikom te korelativnog su tipa. </s><s> Po tome bi se dalo zaključiti da je uspostavljen jasan kriterij razgraničenja koordinatora od subordinatora te: taj je veznik subordinator samo u rečenicama korelativnoga tipa. Vukojević (knjiga) navodi:  Rečenice tog tipa iznimno su rijetke: Slijedećih dana okomili su se aneksionisti na zanelijance tako te je četiri tisuće građana moralo uteći zauvijek iz grada. </s><s> Fabrio BK 306; ... i mrkli oblak srdžbe preletio mu u očima. </s><s> Doduše, oblak je on odmah uklonio tako te nije ni došlo do bljeska munje u očima, ali pjege su se širile na licu i prekrile ga sve do ušiju. </s><s> Marinković K 46; One su zaista pritisle starca tako te se više nije usuđivao pomaći i ni riječi reći. </s><s> Šegedin 211 10. 3. </s><s> </span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Poveznice"> <span class="References">SINONIM:  <span class="References">da</span> tako da :1</span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Subentry"><span class="Subentry__LemmaSign"> tako… te</span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Sense"><span class="Definicija"><span class="Definicija__definicija"> posljedični</span></span></span></p>
@@ -3437,11 +3094,11 @@ rences">jer</span><span class="referenceseparator">, </span><span class="Lemma__
 <p align="justify" style="margin:0pt;"><span class="Sense"><span class="Definicija"><span class="Definicija__definicija"> posljedični</span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Navodi ga Katičić, provjeriti kod Luke</span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Te kao posljedični veznik navode TB (uz napomenu da u glavnoj rečenici obično stoje prilozi tako i toliko), Pavešić: Ruke mu dršću te ne može više pisati. (LKako se zna da to nije sastavni=); Katičić: Zar ti je tako omrznulo živjeti te si se vratio po mene? (Luka??)</span></span></p>
-yle="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Navodi ga Katičić, provjeriti kod Luke</span></span></bdo></p>
+gin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Navodi ga Katičić, provjeriti kod Luke</span></span></bdo></p>
 
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Te kao posljedični veznik navode TB (uz napomenu da u glavnoj rečenici obično stoje prilozi tako i toliko), Pavešić: Ruke mu dršću te ne može više pisati. (LKako se zna da to nije sastavni=); Katičić: Zar ti je tako omrznulo živjeti te si se vratio po mene? (Luka??)</span></span></bdo></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">tȅk </span><span class="Lemma__LemmaSign">tek</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="tek" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">tȅk </span><span class="Lemma__LemmaSign">tek</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Definicija"><span class="Definicija__definicija"> Tek znači prije kratkoga vremena, malo prije.</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Iza Taekwondo kluba Zaprešić uspješna je godina u kojoj su njihovi članovi postigli sjajne uspjehe na brojnim natjecanjima, a da će i godina u koju smo tek zakoračili biti obilježena jednako dobrim rezultatima, potvrđuje i prvo ovogodišnje natjecanje na kojem su naši taekwondisti pokazali da su spremni za novu sezonu.</span></p>
 <span class="Primjer"></span>
@@ -3486,7 +3143,7 @@ yle="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Navod
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Kao vremenski navodi ga Katičić</span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">O riječima nego, no, već, još i tek // Fluminensia, 30 (2018), 1; 63-76</span></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">ter</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="ter" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">ter</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__stilska_odrednica">zast.</span><span class="Definicija"><span class="Definicija__definicija"> sastavni</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - To se caru svidjaše ter se on divljaše stasitim tudjincem.</span></p>
 <span class="Primjer__Izvor"> Franjo Marković. Kohan i Vlasta</span><span class="Primjer"></span>
@@ -3495,8 +3152,9 @@ yle="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Navod
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Zbog tih temeljnih stavova i naputaka iz ovoga Priručnika svatko može nešto naučiti o hrvatskome jeziku, ter spoznati da imati svoju državu ne znači automatski imati i svoj jezik.</span></p>
 <span class="Primjer__Izvor"> Vjesnik</span>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Kao sastavni navode ga Katičić (ima samo jedan primjer iz Mažuranića) i Vukojević (str. 212):  Od sastavnih veznika među surečenicama koje stoje u odnosu uzrok - posljedica mogu doći i, pa, te, pak i ter, i taj se odnos, naravno, može ostvariti formalno neobilježeno (bezveznički).</span></span></p>
+</bdo></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">tkȍ </span><span class="Lemma__LemmaSign">tko</span> <span class="Lemma__vrsta_rijeci">zam.</span><span class="Gramaticki_blok"><span class="Oblici"> (<span class="Oblici__naglaseni">GA kòga/kȍg, D kòmu/kòme/kȍm, L kòme/kòmu/kȍm, I kȋm/kíme</span>)</span></span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="tko" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">tkȍ </span><span class="Lemma__LemmaSign">tko</span> <span class="Lemma__vrsta_rijeci">zam.</span><span class="Gramaticki_blok"><span class="Oblici"> (<span class="Oblici__naglaseni">GA kòga/kȍg, D kòmu/kòme/kȍm, L kòme/kòmu/kȍm, I kȋm/kíme</span>)</span></span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Sense__ograda">(upitna zamjenica)</span><span class="Definicija"><span class="Definicija__definicija"> Tko pita za nepoznatu osobu.</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Tko si ti?</span></p>
 <span class="Primjer"></span>
@@ -3531,11 +3189,11 @@ yle="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Navod
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Katičić: dopusni</span></span></p>
 <p align="justify" style="margin:0pt;"><span class="vanjska_poveznica"> <span class="vanjska_poveznica__izvor">Kolokacijska baza hrvatskoga jezika: </span> <a class="vanjska_poveznica__poveznica" href="http://ihjj.hr/kolokacije/search/?q=tko&amp;search_type=basic" target="_blank">http://ihjj.hr/kolokacije/search/?q=tko&amp;search_type=basic</a></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">toli</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="toli" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">toli</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"><span class="Definicija"><span class="Definicija__definicija"> suprotni</span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Katičić</span></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">ukòliko </span><span class="Lemma__LemmaSign">ukoliko</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="ukoliko" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">ukòliko </span><span class="Lemma__LemmaSign">ukoliko</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Sense__stilska_odrednica">razg.</span><span class="Definicija"><span class="Definicija__definicija"> Ukoliko uvodi stvarnu uvjetnu surečenicu u zavisnosloženoj rečenici.</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> -  Ukoliko ponovo požele pogledati svoj film u ugođaju velike kino dvorane, sa sobom mogu povesti i svoje prijatelje</span></p>
 <span class="Primjer"></span>
@@ -3547,8 +3205,8 @@ yle="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Navod
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Ukoliko biste bolje upućene i danas zapitali tko je najuspješniji predstavnik kraljice sportova u njenoj povijesti, vjerujte da bi najčešće izgovorili njegovo ime.</span></p>
 <p align="justify" style="margin:0pt;"><span class="Poveznice"> <span class="References">SINONIMI:  <span class="References">ako</span> :2<span class="referenceseparator">, </span><span class="References">kad</span> :6</span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Normativna_nap">• <span class="Normativna_nap__napomena">Veznik <i>ukoliko</i> ne treba upotrebljavati u hrvatskome standardnom jeziku, pa ni u njegovu administrativnome funkcionalnom stilu, u kojemu je potvrđen razmjerno često. Umjesto njega treba upotrebljavati veznik <i>ako</i>. Stoga rečenice <i>Ukoliko ne želiš igrati nogomet, možemo se igrati lovice.</i>, <i>Zakasnit ćeš ukoliko se ne požuriš.</i> treba zamijeniti rečenicama <i>Ako ne želiš igrati nogomet, možemo se igrati lovice.</i>, <i>Zakasnit ćeš ako se ne požuriš.</i></span></span></p>
-<span class="Tvorbena_raz"> <span class="Tvorbena_raz__tvorba">Tvorba: u-koliko, </span></span>orbena_raz__tvorba">Tvorba: u-koliko, </span></span></div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">vȅć </span><span class="Lemma__LemmaSign">već</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
+<span class="Tvorbena_raz"> <span class="Tvorbena_raz__tvorba">Tvorba: u-koliko, </span></span>vorba">Tvorba: u-koliko, </span></span></div>
+<p align="justify" class="accordion" id="već" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">vȅć </span><span class="Lemma__LemmaSign">već</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"><span class="Definicija"><span class="Definicija__definicija"> Već u nezavisnosloženoj suprotnoj rečenici povezuje surečenice koje ne mogu zamijeniti mjesta i od kojih je jedna jesna, a druga niječna.</span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Poveznice"> <span class="References">SINONIM:  <span class="References">nego</span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Subentry"><span class="Subentry__LemmaSign"> ne samo… već (i)</span></span></p>
@@ -3560,27 +3218,27 @@ yle="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Navod
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Ovisno o stupnju naglašene suprotnosti  suprotnome veznik <i>a</i> mogu biti sinonimni veznici <i>ali</i>, <i>dok</i>, doč<i>im</i>, <i>no</i>, odnosno u određenim se kontekstima veznik <i>a</i> može zamijeniti kojim od njih, a da pritom značenje rečenice ostane nepromijenjeno. Primjerice,  u rečenici <i>Polazak je ispred crkve u 09,00 sati, a povratak oko 17,00 sati. veznik </i>a<i> zamjenjiv je veznicima </i>dočim<i> i </i>dok<i>, u rečenici </i>Družili smo se uz bosanski kotlić do dugo u noć , a jedino nam je veselje kvario jaki vjetar koji je tako jako puhao da smo nakon nekoliko bezuspješnih pokušaja morali ugasiti peć.<i> zamjenjiv je  veznicima </i>no<i>, </i>dok<i> i </i>dočim%. Suprotnim se veznikom <i>a</i> izriče najmanji stupanj suprotnosti, suprotnim veznicima <i>ali</i>, <i>nego</i> i <i>već</i> najviši. Veznik <i>ali</i> nije zamjenjiv veznicima <i>nego</i> i <i>već</i> zbog različitih sintaktičkih uvjeta u kojima se pojavljuju (veznici <i>nego</i> i <i>već</i> zahtijevaju ili negirani predikat u prvoj surečenici ili negirane predikate u objema surečenicama). Veznici <i>no</i>, <i>dok</i> i <i>dočim</i> nalaze se na ljestvici izricanja suprotnosti između veznika <i>a</i> i veznika <i>ali</i> i u nekim se rečenicama veznik <i>a</i> i <i>veznik </i>ali<i> mogu zamijeniti kojim od njih (a katkad i svima). </i>Stoga su suprotni veznici podijeljeni u tri skupine: one kojima se izriče manji stupanj suprotnosti: <i>a</i>, <i>no</i>, <i>dok</i>, <i>dočim</i>, onima kojima se izriče veći stupanj suprotnosti <i>ali</i>, <i>no</i> , <i>dok</i>, <i>dočim</i> te onima kojima se izriče iznevjereno očekivanje: <i>nego</i>, <i>već</i>.</span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">O riječima nego, no, već, još i tek // Fluminensia, 30 (2018), 1; 63-76</span></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">zȁšto </span><span class="Lemma__HomonymNumber">1</span><span class="Lemma__LemmaSign">zašto</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="zašto" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">zȁšto </span><span class="Lemma__HomonymNumber">1</span><span class="Lemma__LemmaSign">zašto</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Definicija"><span class="Definicija__definicija"> Zašto je zbog čega, radi čega, iz kojih razloga.</span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">2</span> <span class="Definicija"><span class="Definicija__definicija"> Zašto ima vezničku funkciju u zavisnosloženim objektnim rečenicama, uvodi neizravno pitanje.</span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">3</span> <span class="Definicija"><span class="Definicija__definicija"> Zašto ima vezničku funkciju u zavisnosloženim subjektnim rečenicama, uvodi neizravno pitanje.</span></span></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__HomonymNumber">2</span><span class="Lemma__LemmaSign">zašto</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="zašto" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__HomonymNumber">2</span><span class="Lemma__LemmaSign">zašto</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Definicija"><span class="Definicija__definicija"> uzročni</span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Katičić. stilski</span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">2</span> <span class="Definicija"><span class="Definicija__definicija"> objektne (po značenju uzročne)</span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Pranjković (zavisnoupitne objektne (po značenju uzročne): uzročni upitni prilozi ili prijedložni izrazi: zašto, zbog čega i sl.</span></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">zàtō </span><span class="Lemma__LemmaSign">zato</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="zato" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">zàtō </span><span class="Lemma__LemmaSign">zato</span> <span class="Lemma__vrsta_rijeci">pril.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"><span class="Definicija"><span class="Definicija__definicija"> Zato ima vezničku funkciju u nezavisnosloženoj zaključnoj rečenici.</span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">U gramatikama Silić-Pranjković i Hudeček-Mihaljević problematizira se status zaključnih rečenica kao nezavisnosloženih rečenica, a veznici koji se uobičajeno navode kao veznici zaključnih rečenica (dakle, stoga, zato) smatraju se rečeničnim konektorima. Ostali veznici koji se uobičajeno navode kao veznici zaključnih rečenica (stoga što, zato što) veznici su zavisnosloženih (uzročnih) rečenica.</span></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">čas… (a) čas</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="čas… (a) čas" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span><span class="Lemma__LemmaSign">čas… (a) čas</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - I doista, Vukovar se uvijek nekako kolebao između toga dvoga: čas ga je privlačio kozmopolitizam, široki vidici, velik zamah, a čas opet male relacije, domaće petljancije, naškost i ljubav prema rodnom tlu.</span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">J. Flortschütz navodi čitavu skupinu udvojenih veznika u kojoj se nalaze i:  čas … čas, dijelom … dijelom , prije svega … potom, prije svega … potom ...  pa onda, prvo … drugo … treće, s jedne strane … s druge strane, sad … sad, u jednu ruku … u drugu ruku. Te veznike ne nabrajamo među udvojenim veznicima jer bi se tako mogli stvarati čitavi nizovi veznika, tj. priloga i prijedložnih izraza u vezničkoj funkciji.<br>Dijelom je sazrijevao u bačvicama od francuskog hrasta, dijelom u američkim, a dijelom u inoksu.</br></span></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">čìjī </span><span class="Lemma__LemmaSign">čiji</span> <span class="Lemma__vrsta_rijeci">zam.</span><span class="Gramaticki_blok"><span class="Oblici"> (<span class="Oblici__naglaseni">G čìjēg(a), DL čìjēm(u), A čìjī/čìjēg(a), I čìjīm; <i>ž. </i>čìjā, <i>s.</i> čìjē</span>)</span></span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="čiji" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">čìjī </span><span class="Lemma__LemmaSign">čiji</span> <span class="Lemma__vrsta_rijeci">zam.</span><span class="Gramaticki_blok"><span class="Oblici"> (<span class="Oblici__naglaseni">G čìjēg(a), DL čìjēm(u), A čìjī/čìjēg(a), I čìjīm; <i>ž. </i>čìjā, <i>s.</i> čìjē</span>)</span></span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Sense__ograda">(upitna zamjenica)</span><span class="Definicija"><span class="Definicija__definicija"> pita za nepoznatoga posjedovatelja</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Čiji su to kamioni i kamo je pšenica otišla?</span></p>
 <span class="Primjer"></span>
@@ -3626,7 +3284,7 @@ yle="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Navod
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Martin je jos jedna žrtva terorističke ruke, ma čija ona bila, treba je odsjeći.</span></p>
 <p align="justify" style="margin:0pt;"><span class="vanjska_poveznica"> <span class="vanjska_poveznica__izvor">Kolokacijska baza hrvatskoga jezika: </span> <a class="vanjska_poveznica__poveznica" href="http://ihjj.hr/kolokacije/search/?q=%C4%8Diji&amp;search_type=basic" target="_blank">http://ihjj.hr/kolokacije/search/?q=%C4%8Diji&amp;search_type=basic</a></span></p>
 </div>
-<p align="justify" class="accordion" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">čȋm </span><span class="Lemma__LemmaSign">čim</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
+<p align="justify" class="accordion" id="čim" style="margin:20pt 0pt 0pt 5pt;text-indent:-5pt;"><span> <span class="Lemma__Naglaseno">čȋm </span><span class="Lemma__LemmaSign">čim</span> <span class="Lemma__vrsta_rijeci">vez.</span></span></p><div class='panel'>
 <p align="justify" style="margin:0pt;"><span class="Sense"> <span class="Sense__SenseNumber">1</span> <span class="Definicija"><span class="Definicija__definicija"> vremenska rečenica, radnja zavisne surečenice zbiva se neposredno prije radnje glavne surečenice.</span></span><span class="primjeri"> <span class="Primjer"></span></span></span></p>
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> -  Čim su zakoračile u Algoritam u Gajevoj ulici, carstvo za ljubitelje kvalitetnog štiva, osjećale su se kao doma i požurile do polica s najnovijim izdanjima. </span></p>
 <span class="Primjer"></span>
@@ -3645,20 +3303,3 @@ yle="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">Navod
 <p align="justify" style="margin:0pt;"><span class="Primjer__Primjer"> - Čim je automobil skuplji, tim je nedostupniji običnom građaninu. LH</span></p>
 <p align="justify" style="margin:0pt;"><span class="Uporaba">◦ <span class="Uporaba__uporaba">sinonim: što… to</span></span></p>
 </div>
-<script>
-    var acc = document.getElementsByClassName("accordion");
-    var i;
-    
-    for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-          panel.style.display = "none";
-        } else {
-          panel.style.display = "block";
-        }
-      });
-    }
-    </script>
-</body>

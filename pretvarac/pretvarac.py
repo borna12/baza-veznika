@@ -12,9 +12,13 @@ adresa="/".join(os.getcwd().split(os.sep)[:-1])
 
 abecedarij=""
 broj=1
+stranice=["index.html","kostur.html"]
 for file in sorted(os.listdir(adresa)):
     broj+=1
     if file.endswith(".html"):
+      if str(file) in stranice:
+        continue
+      else:
         if  "%i" in str(file):
           os.rename(adresa+"/"+file,adresa+"/"+file.replace("%i",""))
           file=file.replace("%i","")
@@ -24,7 +28,6 @@ for file in sorted(os.listdir(adresa)):
           f.close()
           os.remove(adresa+"/"+file) 
           continue
-        
         soup = BeautifulSoup("\n".join(lines1).replace('href="tlex://','class="audio_izgovor" href="https://rjecnik.hr/mreznik/wp-content/uploads/2021/mreznik_mediji/').replace(".mp3/",".mp3"), 'html.parser')
         paragraf = soup.find('p')
         paragraf.attrs['class'] = 'accordion'
@@ -44,6 +47,7 @@ for file in sorted(os.listdir(adresa)):
           except AttributeError:
             print() 
         span=soup.find('span', {"class" : "Lemma__LemmaSign"})
+        paragraf.attrs['id'] = str(span.string.replace("%i",""))
         if span==None:
           span=soup.find('span', {"class" : "Lemma_Djeca__natuknica"})
         if span==None:
@@ -73,7 +77,7 @@ for file in sorted(os.listdir(adresa)):
         razmak="\n"
         f.seek(0) # go back to the beginning of the file
         # osnovni
-        tekst=str(soup).replace("&lt;","<").replace("&gt;",">").replace('span class="accordion"','span')
+        tekst=str(soup).replace("&lt;","<").replace("&gt;",">").replace('span class="accordion"','span').replace("</s><s> ","").replace("</div>?","</div>")
         
         f.write(tekst)  
         f.close()
@@ -110,9 +114,12 @@ index = io.open(adresa+"/kazalo/index.html",'w',encoding="utf-8", errors='ignore
 for file in sorted(os.listdir(adresa)):
     broj+=1
     if file.endswith(".html"):  
-      f = io.open(adresa+"/"+file,'r+',encoding="utf-8", errors='ignore')
-      lines1 = f.readlines()
-      index.write("".join(lines1))
-      f.close()
+      if str(file) in stranice:
+        continue
+      else:
+        f = io.open(adresa+"/"+file,'r+',encoding="utf-8", errors='ignore')
+        lines1 = f.readlines()
+        index.write("".join(lines1))
+        f.close()
 index.close()
         
