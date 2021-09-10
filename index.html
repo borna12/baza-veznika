@@ -3348,7 +3348,10 @@
 <button id="back2top"><i class="fa fa-chevron-up"></i></button>
 <script src="js/back2top.min.js"></script>
 <script src="https://use.fontawesome.com/2d5bc62cc3.js"></script>
-
+<script
+  src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+  integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+  crossorigin="anonymous"></script>
 
 <script>
     var acc = document.getElementsByClassName("accordion");
@@ -3370,7 +3373,14 @@
 
     // Call the BACK2TOP Function
 BACK2TOP(button, 200);
-    </script>
+
+$('.accordion').each(function() {
+  if ($(this).find('span.Lemma__Naglaseno').length == 1) {
+    $(this).find(".Lemma__LemmaSign").hide()
+  }
+});
+
 
     </script>
+
 </body>
