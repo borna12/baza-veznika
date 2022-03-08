@@ -1,11 +1,11 @@
-body{font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;font-size:20px;margin:auto 0}
+body{font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;font-size:20px;margin:auto 0; }
 hr {
     border: 0;
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
     margin: 0;
 }
-.podloga{background-color: rgb(255, 254, 254);}
+.podloga{background-color: #e5f0fc;}
 button#back2top{
     position: fixed;
     right: 2%;
@@ -32,7 +32,7 @@ button#back2top{
 button#back2top:hover{background-color: #2588df;}
 .accordion {
     margin-left: 0!important;
-    background-color: rgb(238, 228, 228);
+    background-color: #B7D6E6;
     color: rgb(48, 44, 44);
     cursor: pointer;
     padding: 18px;
@@ -40,6 +40,7 @@ button#back2top:hover{background-color: #2588df;}
     text-align: left;
     outline: none;
     transition: 0.4s;
+    margin-top: 0!important;
   }
   
   .active, .accordion:hover {
